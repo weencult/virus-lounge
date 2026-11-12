@@ -1,0 +1,1710 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Virus Lounge — игровой лаунж на Октябрьской, 5 · Нижний Новгород</title>
+<meta name="description" content="Virus Lounge — игровой лаунж в Нижнем Новгороде: PS5 и VR бесплатно для гостей, настолки, караоке, квизы, турниры по FIFA и паровые коктейли. Октябрьская ул., 5. Рейтинг 5,0 на Яндекс Картах.">
+<meta name="theme-color" content="#060807">
+<meta name="format-detection" content="telephone=no">
+<!-- Тестовый показ клиенту: не индексировать. Перед запуском на боевом домене удалить эту строку и robots.txt -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060807'/%3E%3Cg stroke='%23A6FF00' stroke-width='4' stroke-linecap='round' fill='none'%3E%3Ccircle cx='32' cy='32' r='12'/%3E%3Cpath d='M32 8v8M32 48v8M8 32h8M48 32h8M15 15l6 6M43 43l6 6M15 49l6-6M43 21l6-6'/%3E%3C/g%3E%3Ccircle cx='28' cy='30' r='2.5' fill='%23A6FF00'/%3E%3Ccircle cx='36' cy='35' r='2.5' fill='%23A6FF00'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="https://avatars.mds.yandex.net/get-altay/19662431/2a0000019c8629e5c42f0fec28cbf868b304/L">
+<link rel="preload" as="image" fetchpriority="high" imagesizes="100vw" imagesrcset="https://avatars.mds.yandex.net/get-altay/16457969/2a0000019b9929b739d6c3c4d3e9c0f94490/XXL 1024w, https://avatars.mds.yandex.net/get-altay/16457969/2a0000019b9929b739d6c3c4d3e9c0f94490/XXXL 1280w, https://avatars.mds.yandex.net/get-altay/16457969/2a0000019b9929b739d6c3c4d3e9c0f94490/orig 2400w">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Virus Lounge — заразись хорошим вечером">
+<meta property="og:description" content="PS5 и VR бесплатно, настолки, караоке, турниры и паровые коктейли. Октябрьская ул., 5.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18116908/2a0000019f501eaeac981bc2675957658522/XXXL">
+
+<script>document.documentElement.className = 'js';</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://avatars.mds.yandex.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Russo+One&family=Press+Start+2P&display=swap">
+
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #060807;
+    --bg-2: #0B0F0C;
+    --surface: #10150F;
+    --surface-2: #161D15;
+    --line: rgba(166, 255, 0, .12);
+    --line-soft: rgba(255, 255, 255, .08);
+    --text: #ECF7E6;
+    --muted: #A3B19C;
+    --dim: #7D8A77;
+    --acid: #A6FF00;
+    --toxic: #3DFF8B;
+    --violet: #8B5CFF;
+    --pink: #FF2E9A;
+    --cyan: #19E6FF;
+    --grad: linear-gradient(100deg, var(--acid), var(--toxic));
+    --grad-hot: linear-gradient(100deg, var(--violet), var(--pink));
+    --on-acid: #071200;
+    --radius: 18px;
+    --font-head: "Russo One", "Arial Black", system-ui, sans-serif;
+    --font-pixel: "Press Start 2P", ui-monospace, monospace;
+    --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --bar-h: 76px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 130px; -webkit-text-size-adjust: 100%; overflow-x: hidden; overflow-x: clip; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 400 16px/1.6 var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom));
+    overflow-x: hidden; overflow-x: clip;
+  }
+  a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  body.is-booting { overflow: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  svg { display: block; }
+  button { font: inherit; color: inherit; }
+  ::selection { background: var(--acid); color: var(--on-acid); }
+  :focus-visible { outline: 2px solid var(--acid); outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3 { font-family: var(--font-head); font-weight: 400; line-height: 1.08; margin: 0; letter-spacing: .01em; }
+  p { margin: 0; }
+  .container { width: min(1200px, 100% - 32px); margin-inline: auto; position: relative; }
+  .skip { position: absolute; left: -9999px; top: 12px; z-index: 300; background: var(--acid); color: var(--on-acid); padding: 12px 16px; border-radius: 10px; font-weight: 800; }
+  .skip:focus { left: 16px; }
+  .nobr { white-space: nowrap; }
+  .pixel { font-family: var(--font-pixel); font-size: .62rem; letter-spacing: .04em; line-height: 1.6; text-transform: uppercase; }
+
+  /* ---------- Фон: частицы и сетка ---------- */
+  #germs { position: fixed; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
+  .grid-bg {
+    position: fixed; inset: 0; z-index: -2; pointer-events: none;
+    background:
+      radial-gradient(60% 50% at 80% 0%, rgba(139, 92, 255, .14), transparent 60%),
+      radial-gradient(50% 40% at 0% 100%, rgba(166, 255, 0, .08), transparent 60%),
+      linear-gradient(rgba(166, 255, 0, .035) 1px, transparent 1px) 0 0 / 44px 44px,
+      linear-gradient(90deg, rgba(166, 255, 0, .035) 1px, transparent 1px) 0 0 / 44px 44px,
+      var(--bg);
+  }
+  .scanlines { position: fixed; inset: 0; z-index: 200; pointer-events: none; background: repeating-linear-gradient(180deg, rgba(0, 0, 0, .18) 0 1px, transparent 1px 3px); opacity: .35; mix-blend-mode: multiply; }
+
+  /* ---------- Экран загрузки ---------- */
+  .boot {
+    position: fixed; inset: 0; z-index: 400; display: none; place-items: center;
+    background: #030403; cursor: pointer;
+  }
+  .js .boot { display: grid; }
+  .boot.is-done { animation: boot-out .6s cubic-bezier(.7, 0, .3, 1) forwards; }
+  @keyframes boot-out { to { clip-path: inset(50% 0 50% 0); opacity: .3; visibility: hidden; } }
+  .boot-box { width: min(440px, 100% - 48px); }
+  .boot-logo { font: 400 clamp(2.2rem, 10vw, 3.4rem)/1 var(--font-head); color: var(--acid); text-shadow: 0 0 24px rgba(166, 255, 0, .55); margin-bottom: 1.4rem; }
+  .boot-log { min-height: 5.4em; color: var(--toxic); }
+  .boot-log p { opacity: .85; }
+  .boot-bar { height: 14px; margin-top: 1rem; border: 2px solid var(--acid); padding: 2px; }
+  .boot-bar i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(90deg, var(--acid) 0 10px, transparent 10px 13px); }
+  .boot-foot { display: flex; justify-content: space-between; margin-top: .7rem; color: var(--dim); }
+
+  /* ---------- Полоса опыта ---------- */
+  .xp { position: fixed; left: 0; right: 0; top: 0; z-index: 120; height: 4px; background: rgba(166, 255, 0, .08); }
+  .xp i { display: block; height: 100%; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: var(--grad); box-shadow: 0 0 12px var(--acid); }
+
+  /* ---------- Курсор ---------- */
+  .cursor { position: fixed; left: 0; top: 0; z-index: 500; width: 34px; height: 34px; margin: -17px 0 0 -17px; border: 2px solid var(--acid); border-radius: 50%; pointer-events: none; opacity: 0; transition: width .25s, height .25s, margin .25s, background-color .25s, opacity .3s; mix-blend-mode: difference; }
+  .cursor.is-on { opacity: 1; }
+  .cursor.is-hover { width: 58px; height: 58px; margin: -29px 0 0 -29px; background: rgba(166, 255, 0, .2); }
+
+  /* ---------- Кнопки ---------- */
+  .btn {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+    min-height: 54px; padding: 0 1.5rem;
+    font: 800 1rem/1 var(--font-body); text-decoration: none; text-transform: uppercase; letter-spacing: .04em;
+    border: 2px solid transparent; cursor: pointer;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: transform .2s ease, background-color .3s, color .3s, box-shadow .3s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-acid { background: var(--acid); color: var(--on-acid); box-shadow: 0 0 0 rgba(166, 255, 0, 0); }
+  .btn-acid:hover { background: #C4FF4D; box-shadow: 0 0 36px rgba(166, 255, 0, .55); }
+  .btn-ghost { background: rgba(166, 255, 0, .05); border-color: rgba(166, 255, 0, .45); color: var(--text); }
+  .btn-ghost:hover { background: rgba(166, 255, 0, .14); }
+  .btn-sm { min-height: 44px; padding: 0 1.1rem; font-size: .85rem; }
+
+  /* ---------- Шапка ---------- */
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(6, 8, 7, .78);
+    -webkit-backdrop-filter: saturate(150%) blur(14px); backdrop-filter: saturate(150%) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner { display: grid; align-items: center; column-gap: 1rem; grid-template-columns: 1fr auto; grid-template-areas: "logo call" "nav nav"; }
+  .logo { grid-area: logo; display: inline-flex; align-items: center; gap: .7rem; height: 64px; text-decoration: none; justify-self: start; }
+  .logo-badge { width: 44px; height: 44px; border-radius: 12px; overflow: hidden; flex: none; background: #000; box-shadow: 0 0 0 1px rgba(166, 255, 0, .4), 0 0 22px -4px rgba(166, 255, 0, .6); display: grid; place-items: center; color: var(--acid); font-family: var(--font-head); }
+  .logo-badge img { width: 100%; height: 100%; object-fit: cover; }
+  .logo-text { font: 400 clamp(1.05rem, 4.6vw, 1.3rem)/1 var(--font-head); letter-spacing: .04em; white-space: nowrap; }
+  .logo-text b { font-weight: 400; color: var(--acid); }
+  .header-call { grid-area: call; }
+  .nav { grid-area: nav; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 10px 8px; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a {
+    flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 .8rem;
+    color: var(--muted); text-decoration: none; font-weight: 700; font-size: .92rem; text-transform: uppercase; letter-spacing: .04em;
+    border-bottom: 2px solid transparent; transition: color .25s, border-color .25s;
+  }
+  .nav a:hover, .nav a.is-active { color: var(--acid); border-color: var(--acid); }
+  @media (max-width: 374px) { .logo-text { font-size: 1.05rem; } .header-call span { display: none; } .header-call { width: 48px; padding: 0; } }
+
+  /* ---------- Герой ---------- */
+  .hero { position: relative; isolation: isolate; overflow: hidden; min-height: 600px; min-height: max(600px, calc(100svh - 120px - var(--bar-h))); display: flex; align-items: flex-end; padding: 100px 0 48px; }
+  .hero-media { position: absolute; inset: 0; z-index: -3; background: #050605; }
+  .hero-media.is-glitch { animation: rgb-glitch .45s steps(2) 1; }
+  @keyframes rgb-glitch {
+    0% { filter: none; transform: none; }
+    25% { filter: drop-shadow(6px 0 0 rgba(255, 46, 154, .7)) drop-shadow(-6px 0 0 rgba(25, 230, 255, .7)); transform: translateX(-4px) skewX(-2deg); }
+    50% { filter: hue-rotate(60deg) saturate(1.6); transform: translateX(5px); }
+    75% { filter: drop-shadow(-4px 0 0 rgba(166, 255, 0, .7)); transform: translateY(2px); }
+    100% { filter: none; transform: none; }
+  }
+  .hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.1); transition: opacity 1.2s ease, transform 8s ease-out; }
+  .hero-slide.is-on { opacity: 1; transform: scale(1); }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background:
+      linear-gradient(90deg, rgba(6, 8, 7, .92) 0%, rgba(6, 8, 7, .55) 55%, rgba(6, 8, 7, .3) 100%),
+      linear-gradient(180deg, rgba(6, 8, 7, .3) 0%, transparent 30%, rgba(6, 8, 7, .85) 80%, var(--bg) 100%);
+  }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(180deg, rgba(166, 255, 0, .05) 0 2px, transparent 2px 5px); animation: scan 6s linear infinite; pointer-events: none; }
+  @keyframes scan { to { background-position: 0 100px; } }
+  .hud-corners { position: absolute; inset: 16px; pointer-events: none; z-index: -1; }
+  .hud-corners i { position: absolute; width: 34px; height: 34px; border: 2px solid var(--acid); opacity: .7; }
+  .hud-corners i:nth-child(1) { left: 0; top: 0; border-right: 0; border-bottom: 0; }
+  .hud-corners i:nth-child(2) { right: 0; top: 0; border-left: 0; border-bottom: 0; }
+  .hud-corners i:nth-child(3) { left: 0; bottom: 0; border-right: 0; border-top: 0; }
+  .hud-corners i:nth-child(4) { right: 0; bottom: 0; border-left: 0; border-top: 0; }
+  .hud-top { position: absolute; top: 28px; right: 28px; display: none; text-align: right; color: var(--acid); opacity: .8; }
+  .hud-top span { display: block; }
+  .rec::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--pink); margin-right: .5rem; animation: blink 1s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .hero-content { position: relative; max-width: 780px; }
+  .status { display: inline-flex; align-items: center; gap: .6rem; padding: .5rem .9rem; margin-bottom: 1.3rem; background: rgba(6, 8, 7, .7); border: 1px solid var(--line); color: var(--text); }
+  .status .dot { width: 9px; height: 9px; background: var(--dim); }
+  .status[data-open="true"] .dot { background: var(--acid); box-shadow: 0 0 12px var(--acid); animation: blink 1.4s steps(2) infinite; }
+  .status[data-open="false"] .dot { background: var(--pink); }
+
+  .glitch { position: relative; display: inline-block; font-size: clamp(3rem, 15vw, 8.4rem); line-height: .9; color: var(--text); text-shadow: 0 0 40px rgba(166, 255, 0, .35); }
+  .glitch b { font-weight: 400; color: var(--acid); }
+  .glitch::before, .glitch::after { content: attr(data-text); position: absolute; inset: 0; pointer-events: none; }
+  .glitch::before { color: var(--pink); transform: translate(3px, 0); clip-path: inset(0 0 100% 0); animation: glitch-a 3.2s infinite steps(1); mix-blend-mode: screen; }
+  .glitch::after { color: var(--cyan); transform: translate(-3px, 0); clip-path: inset(100% 0 0 0); animation: glitch-b 3.2s infinite steps(1); mix-blend-mode: screen; }
+  @keyframes glitch-a { 0%, 86%, 100% { clip-path: inset(0 0 100% 0); } 88% { clip-path: inset(10% 0 60% 0); transform: translate(-6px, 0); } 91% { clip-path: inset(55% 0 20% 0); transform: translate(6px, 0); } 94% { clip-path: inset(30% 0 45% 0); transform: translate(-3px, 0); } }
+  @keyframes glitch-b { 0%, 86%, 100% { clip-path: inset(100% 0 0 0); } 89% { clip-path: inset(70% 0 5% 0); transform: translate(5px, 0); } 92% { clip-path: inset(15% 0 70% 0); transform: translate(-6px, 0); } 95% { clip-path: inset(40% 0 35% 0); transform: translate(3px, 0); } }
+  .hero-sub { margin-top: .9rem; font: 400 clamp(1.15rem, 4.4vw, 1.9rem)/1.2 var(--font-head); }
+  .hero-sub em { font-style: normal; color: var(--acid); }
+  .lead { margin-top: 1rem; font-size: clamp(1rem, 3.6vw, 1.15rem); color: #CBD7C4; max-width: 600px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.7rem; }
+  .actions .btn { flex: 1 1 220px; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.2rem; }
+  .chip { display: inline-flex; align-items: center; gap: .5rem; min-height: 40px; padding: 0 .9rem; background: rgba(6, 8, 7, .7); border: 1px solid var(--line); text-decoration: none; font-weight: 700; font-size: .9rem; color: var(--text); }
+  .chip svg { width: 17px; height: 17px; color: var(--acid); }
+  a.chip:hover { border-color: var(--acid); }
+  .hero-dots { position: absolute; right: 16px; bottom: 18px; display: flex; gap: 6px; z-index: 2; }
+  .hero-dots { bottom: 4px; }
+  .hero-dots button { width: 34px; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; position: relative; }
+  .hero-dots button::before { content: ""; position: absolute; left: 2px; right: 2px; top: 20px; height: 4px; background: rgba(255, 255, 255, .2); }
+  .hero-dots button::after { content: ""; position: absolute; left: 2px; top: 20px; height: 4px; width: 0; max-width: calc(100% - 4px); background: var(--acid); }
+  .hero-dots button[aria-current="true"]::after { animation: fill 5.5s linear forwards; }
+  @keyframes fill { to { width: 100%; } }
+
+  /* ---------- Бегущая строка ---------- */
+  .ticker { overflow: hidden; background: var(--acid); color: var(--on-acid); padding: 12px 0; transform: rotate(-1.2deg); margin: 10px -10px; box-shadow: 0 0 40px rgba(166, 255, 0, .35); }
+  .ticker.alt { background: var(--violet); color: #fff; transform: rotate(1deg); margin-top: -14px; box-shadow: 0 0 40px rgba(139, 92, 255, .4); }
+  .ticker-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
+  .ticker.alt .ticker-track { animation-direction: reverse; animation-duration: 36s; }
+  .ticker-track span { display: inline-flex; align-items: center; gap: 1.4rem; padding-right: 1.4rem; font: 400 clamp(1rem, 3vw, 1.4rem)/1 var(--font-head); white-space: nowrap; text-transform: uppercase; }
+  .ticker-track i { width: 14px; height: 14px; flex: none; background: currentColor; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+
+  /* ---------- Статы игрока ---------- */
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 46px 0 0; list-style: none; margin: 0; }
+  .stat { position: relative; padding: 18px; background: var(--surface); border: 1px solid var(--line); clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%); }
+  .stat .pixel { color: var(--dim); }
+  .stat b { display: block; margin-top: .55rem; font: 400 clamp(1.9rem, 7vw, 2.8rem)/1 var(--font-head); color: var(--acid); text-shadow: 0 0 18px rgba(166, 255, 0, .4); }
+  .stat span:last-child { display: block; margin-top: .4rem; color: var(--muted); font-size: .88rem; line-height: 1.35; }
+
+  /* ---------- Секции ---------- */
+  .section { padding: 76px 0; position: relative; }
+  .eyebrow { display: inline-flex; align-items: center; gap: .7rem; margin-bottom: 1rem; color: var(--acid); }
+  .eyebrow::before { content: ""; width: 10px; height: 10px; background: var(--acid); box-shadow: 0 0 10px var(--acid); }
+  .section h2 { font-size: clamp(2rem, 7.4vw, 3.6rem); text-transform: uppercase; }
+  .section-head { max-width: 760px; margin-bottom: 2.2rem; }
+  .section-head p { color: var(--muted); margin-top: 1rem; font-size: 1.05rem; }
+  .h-out { -webkit-text-stroke: 1.5px var(--acid); color: transparent; }
+
+  /* ---------- Карточки с наклоном ---------- */
+  .tilt { --rx: 0deg; --ry: 0deg; --gx: 50%; --gy: 50%; transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .25s ease; transform-style: preserve-3d; }
+  .tilt.is-tilting { transition: none; }
+  .glare { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(240px circle at var(--gx) var(--gy), rgba(166, 255, 0, .18), transparent 60%); opacity: 0; transition: opacity .3s; z-index: 2; }
+  .tilt:hover .glare { opacity: 1; }
+
+  /* ---------- Главный квест: GTA 6 ---------- */
+  .quest {
+    position: relative; overflow: hidden; isolation: isolate;
+    display: grid; gap: 22px; padding: 26px 20px;
+    background: linear-gradient(120deg, rgba(255, 46, 154, .2), rgba(139, 92, 255, .22) 45%, rgba(25, 230, 255, .12)), var(--surface);
+    border: 2px solid rgba(255, 46, 154, .55);
+    box-shadow: 0 0 70px -20px rgba(255, 46, 154, .6);
+  }
+  .quest-art { position: relative; aspect-ratio: 9 / 16; max-height: 520px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .15); justify-self: center; width: min(100%, 290px); cursor: zoom-in; padding: 0; background: #000; }
+  .quest-art img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s; }
+  .quest-art:hover img { transform: scale(1.05); }
+  .quest .pixel { color: var(--pink); }
+  .quest h2 { font-size: clamp(2rem, 8vw, 3.8rem); margin-top: .6rem; text-transform: uppercase; background: linear-gradient(100deg, #FFB86B, var(--pink) 40%, var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .quest p.q-text { color: #E2D6EE; margin-top: .9rem; max-width: 520px; }
+  .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 1.4rem; max-width: 460px; }
+  .countdown div { padding: 12px 6px; text-align: center; background: rgba(6, 8, 7, .7); border: 1px solid rgba(255, 46, 154, .4); }
+  .countdown b { display: block; font: 400 clamp(1.6rem, 7vw, 2.4rem)/1 var(--font-head); color: #fff; font-variant-numeric: tabular-nums; }
+  .countdown span { display: block; margin-top: .4rem; font-size: .72rem; color: #CDB9DF; text-transform: uppercase; letter-spacing: .08em; }
+  .q-list { list-style: none; padding: 0; margin: 1.3rem 0 0; display: grid; gap: .5rem; }
+  .q-list li { display: flex; gap: .6rem; align-items: flex-start; color: #EDE3F5; }
+  .q-list li::before { content: ""; flex: none; width: 12px; height: 12px; margin-top: .45rem; border: 2px solid var(--pink); }
+  .q-list li.done::before { background: var(--pink); }
+  .quest .actions .btn-acid { background: var(--pink); color: #fff; }
+  .quest .actions .btn-acid:hover { background: #FF5BB2; box-shadow: 0 0 36px rgba(255, 46, 154, .6); }
+
+  /* ---------- Режимы (что поиграть) ---------- */
+  .modes { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .mode {
+    position: relative; overflow: hidden; padding: 22px; min-height: 210px;
+    display: flex; flex-direction: column; gap: .55rem;
+    background: var(--surface); border: 1px solid var(--line);
+  }
+  .mode::before { content: attr(data-key); position: absolute; right: 14px; top: 12px; font: 400 .6rem/1 var(--font-pixel); color: var(--dim); }
+  .mode .ico { width: 54px; height: 54px; display: grid; place-items: center; margin-bottom: .4rem; background: rgba(166, 255, 0, .1); border: 1px solid rgba(166, 255, 0, .4); color: var(--acid); clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+  .mode .ico svg { width: 28px; height: 28px; }
+  .mode h3 { font-size: 1.45rem; text-transform: uppercase; }
+  .mode p { color: var(--muted); font-size: .95rem; }
+  .mode .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: .6rem; }
+  .mode .tags span { padding: .25rem .55rem; font-size: .76rem; font-weight: 800; background: rgba(255, 255, 255, .05); border: 1px solid var(--line-soft); }
+  .mode .tags span.free { background: var(--acid); color: var(--on-acid); border-color: var(--acid); }
+  .mode.mode-photo { padding: 0; min-height: 280px; justify-content: flex-end; }
+  .mode-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1s; }
+  .mode-photo:hover img { transform: scale(1.06); }
+  .mode-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6, 8, 7, .1) 20%, rgba(6, 8, 7, .95)); }
+  .mode-photo .mode-body { position: relative; z-index: 1; padding: 22px; display: flex; flex-direction: column; gap: .5rem; }
+
+  /* ---------- Сторис ---------- */
+  .stories { display: flex; gap: 14px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px 2rem; padding: 6px 16px 10px; }
+  .stories::-webkit-scrollbar { display: none; }
+  .story-btn { flex: none; width: 86px; display: flex; flex-direction: column; align-items: center; gap: .45rem; padding: 0; border: 0; background: none; cursor: pointer; text-align: center; }
+  .story-btn .ring { width: 78px; height: 78px; padding: 3px; border-radius: 50%; background: conic-gradient(var(--acid), var(--toxic), var(--violet), var(--pink), var(--acid)); animation: spin 6s linear infinite; }
+  .story-btn.is-seen .ring { background: rgba(255, 255, 255, .2); animation: none; }
+  .story-btn .ring span { display: block; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid var(--bg); animation: spin 6s linear infinite reverse; }
+  .story-btn.is-seen .ring span { animation: none; }
+  .story-btn img { width: 100%; height: 100%; object-fit: cover; }
+  .story-btn small { font-size: .74rem; font-weight: 700; line-height: 1.25; color: var(--muted); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ---------- Ивенты ---------- */
+  .events { display: grid; gap: 12px; }
+  .event { position: relative; overflow: hidden; display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; padding: 14px; background: var(--surface); border: 1px solid var(--line); }
+  .event-pic { width: 96px; aspect-ratio: 9 / 16; overflow: hidden; border: 1px solid var(--line-soft); padding: 0; cursor: zoom-in; background: #000; }
+  .event-pic img { width: 100%; height: 100%; object-fit: cover; }
+  .event .pixel { color: var(--acid); }
+  .event h3 { font-size: 1.3rem; margin-top: .4rem; text-transform: uppercase; }
+  .event p { color: var(--muted); font-size: .93rem; margin-top: .3rem; }
+  .event .big { font: 400 1.6rem/1 var(--font-head); color: var(--acid); margin-top: .5rem; text-shadow: 0 0 14px rgba(166, 255, 0, .4); }
+
+  /* ---------- Фото-лента ---------- */
+  .reel { display: grid; gap: 10px; overflow: hidden; padding: 6px 0; }
+  .reel-row { display: flex; gap: 10px; width: max-content; animation: marquee 70s linear infinite; }
+  .reel-row.rev { animation-direction: reverse; animation-duration: 84s; }
+  .reel:hover .reel-row { animation-play-state: paused; }
+  .reel-row button { flex: none; height: clamp(150px, 24vw, 240px); aspect-ratio: 3 / 4; padding: 0; border: 1px solid var(--line); overflow: hidden; cursor: zoom-in; background: var(--surface); filter: saturate(.85); transition: filter .3s; }
+  .reel-row button:hover { filter: saturate(1.3); }
+  .reel-row img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+  .reel-row button:hover img { transform: scale(1.08); }
+
+  /* ---------- Магазин (меню) ---------- */
+  .loot { display: grid; gap: 12px; margin-bottom: 2.4rem; }
+  .box { position: relative; padding: 22px; background: var(--surface); border: 1px solid var(--line); overflow: hidden; display: flex; flex-direction: column; gap: .6rem; }
+  .box::after { content: ""; position: absolute; inset: auto -40% -60% auto; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(closest-side, var(--glow), transparent); opacity: .4; pointer-events: none; }
+  .box[data-rarity="common"] { --glow: rgba(25, 230, 255, .6); }
+  .box[data-rarity="epic"] { --glow: rgba(139, 92, 255, .8); border-color: rgba(139, 92, 255, .5); }
+  .box[data-rarity="legend"] { --glow: rgba(255, 190, 60, .8); border-color: rgba(255, 190, 60, .55); }
+  .rarity { align-self: flex-start; padding: .3rem .55rem; font: 400 .55rem/1 var(--font-pixel); text-transform: uppercase; color: #000; }
+  [data-rarity="common"] .rarity { background: var(--cyan); }
+  [data-rarity="epic"] .rarity { background: var(--violet); color: #fff; }
+  [data-rarity="legend"] .rarity { background: #FFBE3C; }
+  .box h3 { font-size: 1.5rem; text-transform: uppercase; }
+  .box p { color: var(--muted); font-size: .93rem; }
+  .box .coins { margin-top: auto; padding-top: .4rem; display: flex; align-items: center; gap: .5rem; font: 400 1.9rem/1 var(--font-head); }
+  .coin { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #FFF3B0, #FFBE3C 55%, #B57800); box-shadow: 0 0 10px rgba(255, 190, 60, .6); animation: coin 2.4s ease-in-out infinite; }
+  @keyframes coin { 50% { transform: scaleX(.2); } }
+
+  .shop-layout { display: grid; gap: 1.5rem; }
+  .shop-layout > * { min-width: 0; }
+  .tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px 14px; padding: 4px 16px; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .no-js .tabs { display: none; }
+  .tab { flex: none; min-height: 46px; padding: 0 1rem; border: 1px solid rgba(166, 255, 0, .3); background: transparent; color: var(--muted); font: 800 .88rem/1 var(--font-body); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; transition: color .2s, background-color .2s; }
+  .tab:hover { color: var(--text); }
+  .tab[aria-selected="true"] { background: var(--acid); color: var(--on-acid); border-color: var(--acid); }
+  .panel { background: var(--surface); border: 1px solid var(--line); padding: 4px 20px; }
+  .panel:not([hidden]) { animation: panel-in .4s ease; }
+  @keyframes panel-in { from { opacity: 0; transform: translateX(12px); } }
+  .no-js .panel + .panel { margin-top: 12px; }
+  .panel-title { font-size: 1.05rem; padding: 18px 0 4px; }
+  .js .panel-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .items { list-style: none; margin: 0; padding: 0; }
+  .item { display: flex; align-items: baseline; gap: .75rem; padding: 15px 0; border-bottom: 1px dashed rgba(166, 255, 0, .15); }
+  .item:last-child { border-bottom: 0; }
+  .item .name { font-weight: 700; }
+  .item .name small { display: block; font-weight: 500; color: var(--dim); font-size: .82rem; }
+  .leader { flex: 1 1 1rem; min-width: 1rem; }
+  .price { font: 400 1.05rem/1.3 var(--font-head); color: var(--acid); white-space: nowrap; }
+  .shop-aside .lead2 { color: var(--muted); margin-top: 1rem; }
+  .shop-aside .btn { margin-top: 1.2rem; }
+
+  /* ---------- Галерея ---------- */
+  .filters { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px 18px; padding: 4px 16px; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter { flex: none; display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: 0 1rem; border: 1px solid rgba(166, 255, 0, .3); background: transparent; color: var(--muted); font-weight: 800; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; transition: color .2s, background-color .2s; }
+  .filter small { font-weight: 700; font-size: .75rem; color: var(--dim); }
+  .filter:hover { color: var(--text); }
+  .filter[aria-pressed="true"] { background: var(--acid); color: var(--on-acid); border-color: var(--acid); }
+  .filter[aria-pressed="true"] small { color: rgba(7, 18, 0, .7); }
+  .masonry { columns: 2 160px; column-gap: 10px; }
+  .shot { display: block; width: 100%; margin: 0 0 10px; padding: 0; border: 1px solid var(--line); break-inside: avoid; overflow: hidden; position: relative; cursor: zoom-in; background: linear-gradient(110deg, #0f140e 30%, #1a2318 50%, #0f140e 70%) 0 0 / 300% 100%; animation: shimmer 1.4s linear infinite; }
+  .shot.is-loaded { animation: none; background: var(--surface); }
+  .shot img { width: 100%; height: auto; opacity: 0; transform: scale(1.04); transition: opacity .5s, transform .8s; }
+  .shot.is-loaded img { opacity: 1; transform: none; }
+  .shot:hover img { transform: scale(1.05); }
+  .shot .tag { position: absolute; left: 8px; top: 8px; padding: 3px 7px; background: var(--acid); color: var(--on-acid); font-size: .68rem; font-weight: 800; text-transform: uppercase; opacity: 0; transform: translateY(-4px); transition: opacity .25s, transform .25s; }
+  .shot:hover .tag, .shot:focus-visible .tag { opacity: 1; transform: none; }
+  @keyframes shimmer { to { background-position: -300% 0; } }
+  .gallery-more { display: flex; flex-direction: column; align-items: center; gap: .75rem; margin-top: 1.5rem; }
+  .gallery-more p { color: var(--dim); }
+  .gallery-source { margin-top: 1.2rem; text-align: center; color: var(--dim); font-size: .85rem; }
+  .gallery-source a { color: var(--muted); }
+
+  /* ---------- Отзывы ---------- */
+  .review { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .score { padding: 24px; background: var(--surface); border: 1px solid var(--line); display: flex; flex-direction: column; gap: .5rem; }
+  .score-num { font: 400 4.4rem/1 var(--font-head); color: var(--acid); text-shadow: 0 0 30px rgba(166, 255, 0, .45); }
+  .stars { display: flex; gap: 4px; color: #FFBE3C; }
+  .stars svg { width: 22px; height: 22px; }
+  .score p { color: var(--muted); }
+  .bars { list-style: none; padding: 0; margin: .8rem 0 0; display: grid; gap: .55rem; font-size: .85rem; color: var(--muted); }
+  .bars li { display: grid; grid-template-columns: 1fr auto; gap: .25rem .75rem; }
+  .bars i { grid-column: 1 / -1; height: 10px; border: 1px solid var(--line); padding: 1px; }
+  .bars i::before { content: ""; display: block; height: 100%; width: 0; background: repeating-linear-gradient(90deg, var(--acid) 0 8px, transparent 8px 10px); transition: width 1.4s cubic-bezier(.2, .8, .2, 1); }
+  .bars.is-in i::before { width: var(--w); }
+  .award { position: relative; padding: 26px 24px; display: flex; flex-direction: column; gap: 1rem; background: linear-gradient(140deg, rgba(166, 255, 0, .1), transparent 55%), var(--surface); border: 1px solid var(--line); }
+  .trophy { display: flex; align-items: center; gap: .9rem; }
+  .trophy svg { width: 58px; height: 58px; color: #FFBE3C; flex: none; filter: drop-shadow(0 0 12px rgba(255, 190, 60, .5)); }
+  .trophy strong { display: block; font: 400 clamp(1.3rem, 4.6vw, 1.8rem)/1.15 var(--font-head); text-transform: uppercase; }
+  .trophy span { color: var(--dim); font-size: .9rem; }
+  .award blockquote { margin: 0; font-size: clamp(1.1rem, 4vw, 1.4rem); line-height: 1.45; font-weight: 700; max-width: 40ch; }
+  .award figcaption { color: var(--dim); font-size: .9rem; }
+  .award .btn { align-self: flex-start; }
+  .chat { display: grid; gap: 12px; margin-top: 14px; }
+  .msg { display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: start; margin: 0; }
+  .ava { width: 42px; height: 42px; display: grid; place-items: center; font: 400 1rem var(--font-head); color: var(--on-acid); background: var(--acid); clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); }
+  .msg:nth-child(3n+2) .ava { background: var(--violet); color: #fff; }
+  .msg:nth-child(3n) .ava { background: var(--pink); color: #fff; }
+  .bubble { position: relative; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); }
+  .bubble blockquote { margin: 0; color: #D7E3D0; line-height: 1.55; }
+  .bubble figcaption { margin-top: .45rem; font-size: .82rem; color: var(--dim); }
+  .bubble figcaption b { color: var(--acid); font-weight: 800; margin-right: .4rem; }
+
+  /* ---------- Контакты ---------- */
+  .contact-grid { display: grid; gap: 12px; }
+  .card { padding: 22px; background: var(--surface); border: 1px solid var(--line); }
+  .card-label { display: flex; align-items: center; gap: .55rem; color: var(--acid); margin-bottom: 1rem; }
+  .card-label svg { width: 18px; height: 18px; }
+  .address { font: 400 1.4rem/1.25 var(--font-head); }
+  .floor { display: inline-block; margin-top: .6rem; padding: .3rem .7rem; background: rgba(166, 255, 0, .12); color: var(--acid); font-weight: 800; font-size: .88rem; }
+  .facts { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .4rem; color: var(--muted); font-size: .95rem; }
+  .hours { margin: 0; display: grid; gap: .75rem; }
+  .hours div { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .75rem; border-bottom: 1px dashed var(--line); }
+  .hours div:last-child { border-bottom: 0; padding-bottom: 0; }
+  .hours div.is-today dt { color: var(--acid); font-weight: 800; }
+  .hours div.is-today dt::after { content: " · сегодня"; font-weight: 600; }
+  .hours dt { color: var(--muted); }
+  .hours dd { margin: 0; font: 400 1.05rem var(--font-head); white-space: nowrap; }
+  .phones a { display: inline-flex; align-items: center; min-height: 44px; font: 400 1.25rem var(--font-head); text-decoration: none; }
+  .phones a:hover { color: var(--acid); }
+  .socials { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: .3rem; }
+  .soc { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: var(--acid); font-weight: 800; text-decoration: none; }
+  .soc svg { width: 18px; height: 18px; }
+  .map { margin-top: 12px; overflow: hidden; border: 1px solid var(--line); height: 360px; background: var(--surface); }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; filter: invert(.92) hue-rotate(180deg) saturate(.6) contrast(1.05); }
+  .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .contact-actions .btn { flex: 1 1 240px; }
+
+  /* ---------- Подвал ---------- */
+  .site-footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--dim); font-size: .9rem; background: rgba(6, 8, 7, .8); }
+  .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+  .age-wrap { display: flex; align-items: center; gap: .9rem; }
+  .age { width: 54px; height: 54px; display: grid; place-items: center; flex: none; border: 2px solid var(--pink); color: var(--text); font: 400 1rem var(--font-head); }
+  .credits { width: 100%; font-size: .8rem; color: #5f6b5a; }
+  .credits a { color: var(--dim); }
+  .konami-hint { color: #3f4a3b; }
+
+  /* ---------- Нижняя панель (мобильный) ---------- */
+  .mobile-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(6, 8, 7, .92); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid var(--line); }
+  .mobile-bar .btn { min-height: 54px; padding: 0 .8rem; }
+
+  /* ---------- Достижения ---------- */
+  .toasts { position: fixed; left: 16px; bottom: calc(var(--bar-h) + 16px + env(safe-area-inset-bottom)); z-index: 150; display: grid; gap: 8px; pointer-events: none; }
+  .toast { display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 10px; min-width: 250px; max-width: calc(100vw - 32px); background: rgba(10, 14, 9, .96); border: 1px solid var(--acid); box-shadow: 0 0 30px rgba(166, 255, 0, .3); animation: toast-in .5s cubic-bezier(.2, 1.4, .4, 1) both, toast-out .4s ease 3.4s forwards; }
+  .toast .t-ico { width: 40px; height: 40px; flex: none; display: grid; place-items: center; background: var(--acid); color: var(--on-acid); }
+  .toast .t-ico svg { width: 24px; height: 24px; }
+  .toast .pixel { color: var(--acid); font-size: .52rem; }
+  .toast strong { display: block; font-size: .95rem; margin-top: .2rem; }
+  @keyframes toast-in { from { opacity: 0; transform: translateX(-120%); } }
+  @keyframes toast-out { to { opacity: 0; transform: translateX(-120%); } }
+
+  /* ---------- Лайтбокс и сторис ---------- */
+  .lightbox, .story { position: fixed; inset: 0; z-index: 600; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #030403; color: var(--text); }
+  .lightbox::backdrop, .story::backdrop { background: rgba(0, 0, 0, .8); }
+  .lightbox[open] { display: grid; grid-template-rows: auto 1fr auto; animation: lb-in .3s ease; }
+  @keyframes lb-in { from { opacity: 0; } }
+  .lb-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 12px 16px; }
+  .lb-count { color: var(--acid); }
+  .lb-stage { position: relative; min-height: 0; display: grid; place-items: center; padding: 0 8px; touch-action: pan-y; }
+  .lb-stage img { max-width: 100%; max-height: calc(100dvh - 150px); object-fit: contain; transition: opacity .25s; user-select: none; -webkit-user-drag: none; border: 1px solid var(--line); }
+  .lb-stage img.is-loading { opacity: .25; }
+  .lb-btn { width: 48px; height: 48px; display: grid; place-items: center; cursor: pointer; background: rgba(166, 255, 0, .08); border: 1px solid rgba(166, 255, 0, .4); color: var(--acid); transition: background-color .2s; }
+  .lb-btn:hover { background: rgba(166, 255, 0, .2); }
+  .lb-btn svg { width: 22px; height: 22px; }
+  .lb-prev, .lb-next { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; display: none; }
+  .lb-prev { left: 16px; } .lb-prev svg { transform: rotate(180deg); }
+  .lb-next { right: 16px; }
+  .lb-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); color: var(--muted); font-size: .9rem; }
+  .lb-nav-m { display: flex; gap: 8px; }
+  .lb-cap b { color: var(--acid); }
+
+  .story[open] { display: grid; place-items: center; animation: lb-in .25s ease; }
+  .story-frame { position: relative; width: min(100vw, calc(100dvh * 9 / 16)); height: min(100dvh, calc(100vw * 16 / 9)); background: #000; overflow: hidden; }
+  .story-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .story-bars { position: absolute; left: 10px; right: 10px; top: 10px; z-index: 3; display: flex; gap: 4px; }
+  .story-bars i { flex: 1; height: 3px; background: rgba(255, 255, 255, .3); overflow: hidden; }
+  .story-bars i b { display: block; height: 100%; width: 0; background: #fff; }
+  .story-bars i.is-done b { width: 100%; }
+  .story-bars i.is-now b { animation: fill var(--dur, 5s) linear forwards; }
+  .story-frame.is-paused .story-bars i.is-now b { animation-play-state: paused; }
+  .story-head { position: absolute; left: 12px; right: 12px; top: 24px; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 10px; text-shadow: 0 1px 6px rgba(0, 0, 0, .8); font-weight: 800; }
+  .story-close { width: 44px; height: 44px; display: grid; place-items: center; border: 0; background: rgba(0, 0, 0, .35); color: #fff; cursor: pointer; }
+  .story-close svg { width: 22px; height: 22px; }
+  .story-tap { position: absolute; top: 0; bottom: 0; z-index: 2; width: 40%; border: 0; background: transparent; cursor: pointer; }
+  .story-tap.prev { left: 0; } .story-tap.next { right: 0; width: 60%; }
+
+  /* ---------- Появление при скролле ---------- */
+  /* translate/scale отдельно от transform, чтобы не мешать наклону .tilt */
+  .js .reveal { opacity: 0; translate: 0 26px; transition: opacity .8s ease, translate .8s cubic-bezier(.2, .8, .2, 1), transform .25s ease; }
+  .js .reveal.is-in { opacity: 1; translate: none; }
+  .js .reveal-pop { opacity: 0; scale: .92; transition: opacity .5s ease, scale .6s cubic-bezier(.2, 1.4, .4, 1), transform .25s ease; }
+  .js .reveal-pop.is-in { opacity: 1; scale: none; }
+
+  /* ---------- Телефоны ---------- */
+  @media (max-width: 899px) {
+    .scanlines, .cursor { display: none; } /* полноэкранный blend тяжёл для мобильных GPU */
+    .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+    .ticker { margin: 8px -10px; }
+  }
+  @media (max-width: 699px) {
+    .stats .stat:last-child { grid-column: 1 / -1; }
+    .section { padding: 64px 0; }
+    .section-head { margin-bottom: 1.6rem; }
+    .quest { padding: 22px 16px; }
+    .quest-art { width: min(100%, 240px); }
+    .countdown { gap: 6px; }
+    .countdown span { font-size: .62rem; letter-spacing: .04em; }
+    .mode { min-height: 0; }
+    .mode.mode-photo { min-height: 340px; }
+    .event { grid-template-columns: 84px 1fr; gap: 14px; }
+    .event-pic { width: 84px; }
+    .panel { padding: 2px 16px; }
+    .map { height: 300px; }
+    .lb-stage img { max-height: calc(100dvh - 140px); }
+  }
+  @media (max-width: 359px) {
+    .glitch { font-size: 2.7rem; }
+    .actions .btn { flex-basis: 100%; padding: 0 1rem; font-size: .9rem; }
+    .chip { font-size: .82rem; }
+  }
+
+  /* ---------- Планшет / десктоп ---------- */
+  @media (min-width: 700px) {
+    .stats { grid-template-columns: repeat(5, 1fr); }
+    .modes { grid-template-columns: repeat(2, 1fr); }
+    .events { grid-template-columns: repeat(2, 1fr); }
+    .loot { grid-template-columns: repeat(3, 1fr); }
+    .contact-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-grid .card:first-child { grid-column: 1 / -1; }
+    .review { grid-template-columns: minmax(250px, .75fr) 1.25fr; }
+    .award { padding: 38px; }
+    .masonry { columns: 3; }
+    .chat { grid-template-columns: repeat(2, 1fr); }
+    .quest { grid-template-columns: 1fr 260px; align-items: center; padding: 40px; }
+    .quest-art { order: 2; }
+  }
+  @media (min-width: 900px) {
+    html { scroll-padding-top: 90px; }
+    body { padding-bottom: 0; }
+    .mobile-bar { display: none; }
+    .toasts { bottom: 24px; left: 24px; }
+    .header-inner { grid-template-columns: auto 1fr auto; grid-template-areas: "logo nav call"; height: 76px; }
+    .logo { height: auto; }
+    .nav { justify-content: center; margin: 0; padding: 0; overflow: visible; }
+    .hero { min-height: min(920px, calc(100svh - 76px)); align-items: center; padding: 120px 0 90px; }
+    .hud-top { display: block; }
+    .hud-corners { inset: 24px; }
+    .hero-dots { right: 36px; bottom: 36px; }
+    .actions .btn { flex: 0 0 auto; }
+    .section { padding: 116px 0; }
+    .modes { grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(230px, auto); }
+    .mode.wide { grid-column: span 2; }
+    .mode.tall { grid-row: span 2; }
+    .quest { grid-template-columns: 1fr 300px; padding: 52px; gap: 40px; }
+    .shop-layout { grid-template-columns: .8fr 1.4fr; gap: 4rem; align-items: start; }
+    .shop-aside { position: sticky; top: 120px; }
+    .tabs, .filters { margin: 0 0 16px; padding: 4px 0; flex-wrap: wrap; }
+    .panel { padding: 6px 30px; }
+    .contact-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+    .contact-grid .card:first-child { grid-column: auto; }
+    .contact-actions .btn { flex: 0 0 auto; }
+    .map { height: 420px; }
+    .masonry { columns: 4; column-gap: 14px; }
+    .shot { margin-bottom: 14px; }
+    .stories { margin: 0 0 2.4rem; padding: 6px 0 10px; }
+    .chat { grid-template-columns: repeat(3, 1fr); }
+    .lb-prev, .lb-next { display: grid; }
+    .lb-nav-m { display: none; }
+    .lb-stage { padding: 0 88px; }
+  }
+
+  @media (hover: none) { .btn-acid:hover { box-shadow: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .js .reveal, .js .reveal-pop { opacity: 1; translate: none; scale: none; }
+    .js .boot { display: none; }
+    .reel { overflow-x: auto; }
+    .bars i::before { width: var(--w); }
+    .scanlines { display: none; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Virus Lounge",
+  "alternateName": "Вирус Лаунж",
+  "image": "https://avatars.mds.yandex.net/get-altay/18116908/2a0000019f501eaeac981bc2675957658522/XXXL",
+  "address": { "@type": "PostalAddress", "streetAddress": "Октябрьская ул., 5, цокольный этаж", "addressLocality": "Нижний Новгород", "postalCode": "603000", "addressCountry": "RU" },
+  "telephone": "+7 919 167-87-54",
+  "priceRange": "500–1200 ₽",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "396", "reviewCount": "262" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"], "opens": "16:00", "closes": "00:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "16:00", "closes": "02:00" }
+  ],
+  "hasMap": "https://yandex.ru/maps/org/virus_launzh/149144546640/",
+  "sameAs": ["https://vk.ru/virus_lounge", "https://t.me/virus_launge"]
+}
+</script>
+</head>
+
+<body class="is-booting">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.9A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 3 10.5l7 2.5 2.5 7z"/><path d="M10 13l11-10"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8.5 7l1.5-3h4l1.5 3"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></symbol>
+    <symbol id="i-vr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h13A2.5 2.5 0 0 1 21 8.5v6a2.5 2.5 0 0 1-2.5 2.5h-3.2l-2-2.6a1.6 1.6 0 0 0-2.6 0l-2 2.6H5.5A2.5 2.5 0 0 1 3 14.5z"/><circle cx="8" cy="11.5" r="1.6"/><circle cx="16" cy="11.5" r="1.6"/></symbol>
+    <symbol id="i-pad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 4.6 6.9l-1.3 3a2.5 2.5 0 0 1-4.1.7L14 15.5h-4l-2.2 2.1a2.5 2.5 0 0 1-4.1-.7l-1.3-3A5 5 0 0 1 7 7z"/><path d="M7.5 10v3M6 11.5h3"/><circle cx="15.5" cy="10.5" r=".9" fill="currentColor"/><circle cx="17.5" cy="12.5" r=".9" fill="currentColor"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5.2A3 3 0 0 0 6 17a3 3 0 0 0 3 3V4zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5.2A3 3 0 0 1 18 17a3 3 0 0 1-3 3V4z"/><path d="M9 4h6M9 20h6"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="12.5" rx="1"/><path d="M8 21h8M12 17.5V21"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1.5A3.5 3.5 0 0 0 7.5 11M17 6h3v1.5a3.5 3.5 0 0 1-3.5 3.5"/><path d="M12 14v4M8 21h8M9.5 18h5"/></symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V13a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8M3 21h18"/><path d="M4 15.5c1.3 1 2.7 1 4 0s2.7-1 4 0 2.7 1 4 0 2.7-1 4 0"/><path d="M12 11V8M12 5.5v.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-virus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/><circle cx="10.5" cy="11" r=".8" fill="currentColor"/><circle cx="13.5" cy="13.5" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+  </defs>
+</svg>
+
+<!-- Экран загрузки -->
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-box">
+    <p class="boot-logo">VIRUS<br>LOUNGE</p>
+    <div class="boot-log pixel" id="boot-log"></div>
+    <div class="boot-bar"><i id="boot-bar"></i></div>
+    <div class="boot-foot pixel"><span id="boot-pct">0%</span><span>нажми, чтобы пропустить</span></div>
+  </div>
+</div>
+
+<script>
+  /* Страховка: если основной скрипт упадёт, экран загрузки всё равно уйдёт */
+  setTimeout(function () { var b = document.getElementById('boot'); document.body.classList.remove('is-booting'); if (b) b.classList.add('is-done'); }, 4000);
+</script>
+<div class="grid-bg" aria-hidden="true"></div>
+<canvas id="germs" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="xp" aria-hidden="true"><i id="xp"></i></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="Virus Lounge — на главную">
+      <span class="logo-badge" aria-hidden="true"><img src="https://avatars.mds.yandex.net/get-altay/19662431/2a0000019c8629e5c42f0fec28cbf868b304/S" alt="" width="44" height="44" onerror="this.replaceWith('V')"></span>
+      <span class="logo-text"><b>VIRUS</b> LOUNGE</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#modes">Режимы</a>
+      <a href="#events">Ивенты</a>
+      <a href="#menu">Меню</a>
+      <a href="#photos">Фото</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-acid btn-sm header-call" href="tel:+79191678754" aria-label="Позвонить: +7 (919) 167-87-54">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg><span>Бронь</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. Герой -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media" id="hero-media" aria-hidden="true"></div>
+    <div class="hud-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="hud-top pixel" aria-hidden="true"><span class="rec">live · октябрьская 5</span><span id="hud-clock">--:--</span></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <p class="status pixel" id="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="status-text">Ежедневно с 16:00</span></p>
+        <h1 id="hero-title"><span class="glitch" data-text="VIRUS LOUNGE"><b>VIRUS</b> LOUNGE</span></h1>
+        <p class="hero-sub">Заразись <em>хорошим вечером</em></p>
+        <p class="lead">Игровой лаунж в&nbsp;центре Нижнего: PS5 и&nbsp;VR бесплатно для гостей, гора настолок, караоке, квизы, турниры&nbsp;— и&nbsp;паровые коктейли.</p>
+        <div class="actions">
+          <a class="btn btn-acid magnet" href="tel:+79191678754"><svg aria-hidden="true"><use href="#i-play"/></svg>Press start — бронь</a>
+          <a class="btn btn-ghost" href="#modes"><svg aria-hidden="true"><use href="#i-pad"/></svg>Выбрать режим</a>
+        </div>
+        <div class="hero-meta">
+          <a class="chip" href="https://yandex.ru/maps/org/virus_launzh/149144546640/reviews/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-star"/></svg>5,0 · 262 отзыва</a>
+          <span class="chip"><svg aria-hidden="true"><use href="#i-trophy"/></svg>Хорошее место 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots" id="hero-dots" aria-label="Слайды"></div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>PS5 бесплатно<i></i>VR бесплатно<i></i>GTA 6<i></i>EA FC 27<i></i>UFC 6<i></i>Mortal Kombat 1<i></i>Настолки<i></i>Караоке<i></i>Квизы<i></i></span>
+      <span>PS5 бесплатно<i></i>VR бесплатно<i></i>GTA 6<i></i>EA FC 27<i></i>UFC 6<i></i>Mortal Kombat 1<i></i>Настолки<i></i>Караоке<i></i>Квизы<i></i></span>
+    </div>
+  </div>
+  <div class="ticker alt" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Паровые коктейли<i></i>Комбо-сеты<i></i>Бельгийские вафли<i></i>Авторский чай<i></i>Лимонады<i></i>Турнир FIFA<i></i>−15% в день рождения<i></i></span>
+      <span>Паровые коктейли<i></i>Комбо-сеты<i></i>Бельгийские вафли<i></i>Авторский чай<i></i>Лимонады<i></i>Турнир FIFA<i></i>−15% в день рождения<i></i></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="stats" aria-label="Статистика">
+      <li class="stat reveal-pop"><span class="pixel">rating</span><b data-count="5.0" data-dec="1">5,0</b><span>на Яндекс Картах</span></li>
+      <li class="stat reveal-pop"><span class="pixel">votes</span><b data-count="396">396</b><span>оценок гостей</span></li>
+      <li class="stat reveal-pop"><span class="pixel">reviews</span><b data-count="262">262</b><span>отзыва</span></li>
+      <li class="stat reveal-pop"><span class="pixel">vibe</span><b data-count="98" data-suffix="%">98%</b><span>хвалят атмосферу</span></li>
+      <li class="stat reveal-pop"><span class="pixel">photos</span><b id="stat-photos" data-count="110">110</b><span>фото на&nbsp;сайте</span></li>
+    </ul>
+  </div>
+
+  <!-- 2. Главный квест: GTA 6 -->
+  <section class="section" id="quest" aria-labelledby="quest-title" style="padding-bottom:0">
+    <div class="container">
+      <div class="quest reveal">
+        <div>
+          <p class="pixel" id="quest-label">Главный квест · 19 ноября</p>
+          <h2 id="quest-title">GTA 6 в&nbsp;Вирусе</h2>
+          <p class="q-text" id="quest-text">Почти 14 лет ожиданий&nbsp;— и&nbsp;в&nbsp;день релиза каждый гость сможет опробовать шедевр. Ради этого момента с&nbsp;18 на&nbsp;19 ноября работаем до&nbsp;02:00.</p>
+          <div class="countdown" id="countdown" aria-label="До релиза">
+            <div><b data-u="d">00</b><span>дней</span></div>
+            <div><b data-u="h">00</b><span>часов</span></div>
+            <div><b data-u="m">00</b><span>минут</span></div>
+            <div><b data-u="s">00</b><span>секунд</span></div>
+          </div>
+          <ul class="q-list">
+            <li class="done">Новинки появляются сразу: EA FC 27, UFC 6, MK 1</li>
+            <li>Забронировать плойку заранее, чтобы быть первым на&nbsp;релизе</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-acid" href="tel:+79191678754"><svg aria-hidden="true"><use href="#i-pad"/></svg>Забронировать плойку</a>
+          </div>
+        </div>
+        <button class="quest-art" type="button" data-story="0" aria-label="Открыть сторис про GTA 6">
+          <img src="https://avatars.mds.yandex.net/get-maps_stories/21659034/2a000001a1cfacd2922026c7bcf00de33129/L" alt="Афиша: GTA 6 в Вирусе, релиз 19 ноября" loading="lazy">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Режимы -->
+  <section class="section" id="modes" aria-labelledby="modes-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Select game mode</p>
+        <h2 id="modes-title" data-scramble>Выбери режим</h2>
+        <p>Приставка и&nbsp;VR&nbsp;— бесплатно для гостей. По&nbsp;словам самого заведения, это единственная лаунж-зона с&nbsp;VR в&nbsp;Нижнем Новгороде.</p>
+      </div>
+
+      <div class="modes">
+        <article class="mode mode-photo wide tall tilt reveal" data-key="P1">
+          <img src="https://avatars.mds.yandex.net/get-altay/19681410/2a0000019b99316991441ffc60fbd5304c57/XL" alt="PS5 и шлем PS VR2 на столе" loading="lazy">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="mode-body">
+            <span class="ico" aria-hidden="true"><svg><use href="#i-vr"/></svg></span>
+            <h3>VR</h3>
+            <p>Шлем PS VR2&nbsp;— погружение, которого вы ещё не&nbsp;испытывали. Гости смеются до&nbsp;слёз, проверено отзывами.</p>
+            <div class="tags"><span class="free">Бесплатно</span><span>PS VR2</span></div>
+          </div>
+        </article>
+        <article class="mode wide tilt reveal" data-key="P2">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="ico" aria-hidden="true"><svg><use href="#i-pad"/></svg></span>
+          <h3>PS5</h3>
+          <p>Новинки появляются в&nbsp;день релиза. Бронируйте плойку заранее, если хотите быть первым.</p>
+          <div class="tags"><span class="free">Бесплатно</span><span>GTA 6</span><span>EA FC 27</span><span>UFC 6</span><span>MK 1</span></div>
+        </article>
+        <article class="mode tilt reveal" data-key="P3">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="ico" aria-hidden="true"><svg><use href="#i-dice"/></svg></span>
+          <h3>Настолки</h3>
+          <p>Огромная полка игр&nbsp;— на&nbsp;двоих и&nbsp;на&nbsp;большую компанию.</p>
+        </article>
+        <article class="mode tilt reveal" data-key="P4">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="ico" aria-hidden="true"><svg><use href="#i-mic"/></svg></span>
+          <h3>Караоке</h3>
+          <p>Спеть хиты всей компанией&nbsp;— или поставить свою музыку.</p>
+        </article>
+        <article class="mode tilt reveal" data-key="P5">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="ico" aria-hidden="true"><svg><use href="#i-brain"/></svg></span>
+          <h3>Квиз</h3>
+          <p>Проводим квизы для компаний: большой экран, раунды, подарки победителям.</p>
+          <div class="tags"><span>от 4 человек</span></div>
+        </article>
+        <article class="mode tilt reveal" data-key="P6">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="ico" aria-hidden="true"><svg><use href="#i-tv"/></svg></span>
+          <h3>Трансляции</h3>
+          <p>Спорт и&nbsp;кино на&nbsp;большом экране, Wi‑Fi и&nbsp;зарядка для телефона.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Лента фото -->
+  <div class="reel" id="reel" aria-label="Фотолента"></div>
+
+  <!-- 4. Ивенты + сторис -->
+  <section class="section" id="events" aria-labelledby="events-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Events &amp; buffs</p>
+        <h2 id="events-title" data-scramble>Ивенты и бонусы</h2>
+        <p>Сторис заведения прямо здесь&nbsp;— нажмите на&nbsp;кружок.</p>
+      </div>
+      <div class="stories" id="stories" aria-label="Сторис"></div>
+
+      <div class="events">
+        <article class="event tilt reveal">
+          <span class="glare" aria-hidden="true"></span>
+          <button class="event-pic" type="button" data-story="2" aria-label="Открыть афишу турнира"><img src="https://avatars.mds.yandex.net/get-maps_stories/21930536/2a000001a085fbfb468226ab985b5f4108c1/M" alt="" loading="lazy"></button>
+          <div>
+            <p class="pixel">PvP · турнир</p>
+            <h3>Турнир по&nbsp;FIFA&nbsp;27</h3>
+            <p>Собирай команду и&nbsp;покажи, кто здесь лучший.</p>
+            <p class="big">6 000 ₽</p>
+            <p>призовой фонд · запись по&nbsp;телефону</p>
+          </div>
+        </article>
+        <article class="event tilt reveal">
+          <span class="glare" aria-hidden="true"></span>
+          <button class="event-pic" type="button" data-story="1" aria-label="Открыть афишу акции понедельника"><img src="https://avatars.mds.yandex.net/get-maps_stories/20932770/2a000001a11b06a0fdad3cfd78421c25c813/M" alt="" loading="lazy"></button>
+          <div>
+            <p class="pixel">Бонус · понедельник</p>
+            <h3>Акция понедельника</h3>
+            <p>Дымный коктейль на&nbsp;фрукте по&nbsp;цене обычного.</p>
+            <p class="big">×1 цена</p>
+          </div>
+        </article>
+        <article class="event tilt reveal">
+          <span class="glare" aria-hidden="true"></span>
+          <button class="event-pic" type="button" data-story="5" aria-label="Открыть афишу скидки в день рождения"><img src="https://avatars.mds.yandex.net/get-maps_stories/21930536/2a000001a086030c8b5525c8435a231c7f41/M" alt="" loading="lazy"></button>
+          <div>
+            <p class="pixel">Бафф · день рождения</p>
+            <h3>Скидка в&nbsp;день рождения</h3>
+            <p>Действует за&nbsp;два дня до&nbsp;и&nbsp;два дня после.</p>
+            <p class="big">−15%</p>
+          </div>
+        </article>
+        <article class="event tilt reveal">
+          <span class="glare" aria-hidden="true"></span>
+          <button class="event-pic" type="button" data-story="3" aria-label="Открыть афишу квиза"><img src="https://avatars.mds.yandex.net/get-maps_stories/21930536/2a000001a085fa67fc4244349ac1e7fb72d3/M" alt="" loading="lazy"></button>
+          <div>
+            <p class="pixel">Co-op · компания</p>
+            <h3>Квиз для компаний</h3>
+            <p>Отгадай мелодию, тематические раунды, командный дух. Подходит для корпоратива и&nbsp;дня рождения.</p>
+            <p class="big">от 4 игроков</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Меню -->
+  <section class="section" id="menu" aria-labelledby="menu-title" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Shop · loot boxes</p>
+        <h2 id="menu-title" data-scramble>Магазин</h2>
+        <p>Комбо-наборы выгоднее, чем по&nbsp;отдельности. Меню обновлено 8&nbsp;октября.</p>
+      </div>
+
+      <div class="loot">
+        <article class="box tilt reveal-pop" data-rarity="common">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="rarity">common</span>
+          <h3>Комбо №1</h3>
+          <p>Картошка фри + наггетсы 6&nbsp;шт + стрипсы 3&nbsp;шт + 2&nbsp;соуса</p>
+          <p class="coins"><span class="coin" aria-hidden="true"></span>690&nbsp;₽</p>
+        </article>
+        <article class="box tilt reveal-pop" data-rarity="epic">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="rarity">epic</span>
+          <h3>Комбо №2</h3>
+          <p>Сырные шарики 6&nbsp;шт + наггетсы 12&nbsp;шт + стрипсы 6&nbsp;шт + 3&nbsp;соуса + картошка по‑деревенски + чесночные гренки + чайник чая</p>
+          <p class="coins"><span class="coin" aria-hidden="true"></span>1750&nbsp;₽</p>
+        </article>
+        <article class="box tilt reveal-pop" data-rarity="legend">
+          <span class="glare" aria-hidden="true"></span>
+          <span class="rarity">legendary</span>
+          <h3>Комбо №3</h3>
+          <p>Паровой коктейль на&nbsp;чаше + чайник чая + бельгийские вафли 2&nbsp;шт</p>
+          <p class="coins"><span class="coin" aria-hidden="true"></span>2050&nbsp;₽</p>
+        </article>
+      </div>
+
+      <div class="shop-layout">
+        <div class="shop-aside reveal">
+          <p class="eyebrow pixel">Inventory</p>
+          <h3 style="font-size:clamp(1.6rem,5vw,2.4rem);text-transform:uppercase">Всё меню</h3>
+          <p class="lead2">Закуски к&nbsp;игре, кофе, авторский чай, лимонады и&nbsp;сладости. Средний чек 500–1200&nbsp;₽.</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-open-cat="m"><svg aria-hidden="true"><use href="#i-book"/></svg>Фото меню</button>
+        </div>
+
+        <div>
+          <div class="tabs" role="tablist" aria-label="Категории меню">
+            <button class="tab" role="tab" id="tab-snacks" aria-controls="panel-snacks" aria-selected="true">Закуски</button>
+            <button class="tab" role="tab" id="tab-steam" aria-controls="panel-steam" aria-selected="false" tabindex="-1">Паровые коктейли</button>
+            <button class="tab" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Напитки</button>
+            <button class="tab" role="tab" id="tab-sweet" aria-controls="panel-sweet" aria-selected="false" tabindex="-1">Сладости</button>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-snacks" aria-labelledby="tab-snacks" tabindex="0">
+            <h3 class="panel-title">Закуски</h3>
+            <ul class="items">
+              <li class="item"><span class="name">Пельмешки фри с&nbsp;соусом</span><span class="leader"></span><span class="price">300&nbsp;₽</span></li>
+              <li class="item"><span class="name">Картошечка фри</span><span class="leader"></span><span class="price">280&nbsp;₽</span></li>
+              <li class="item"><span class="name">Картошечка по‑деревенски</span><span class="leader"></span><span class="price">280&nbsp;₽</span></li>
+              <li class="item"><span class="name">Сэндвич с&nbsp;ветчиной и&nbsp;томатом</span><span class="leader"></span><span class="price">270&nbsp;₽</span></li>
+              <li class="item"><span class="name">Сырные шарики<small>6 шт</small></span><span class="leader"></span><span class="price">260&nbsp;₽</span></li>
+              <li class="item"><span class="name">Гренки чесночные</span><span class="leader"></span><span class="price">250&nbsp;₽</span></li>
+              <li class="item"><span class="name">Наггетсы<small>6 / 12 шт</small></span><span class="leader"></span><span class="price">190 / 320&nbsp;₽</span></li>
+              <li class="item"><span class="name">Стрипсы<small>3 шт</small></span><span class="leader"></span><span class="price">190&nbsp;₽</span></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-steam" aria-labelledby="tab-steam" tabindex="0">
+            <h3 class="panel-title">Паровые коктейли</h3>
+            <ul class="items">
+              <li class="item"><span class="name">На&nbsp;ананасе<small>по предзаказу</small></span><span class="leader"></span><span class="price">2100&nbsp;₽</span></li>
+              <li class="item"><span class="name">На&nbsp;яблоке, грейпфруте или апельсине</span><span class="leader"></span><span class="price">1800&nbsp;₽</span></li>
+              <li class="item"><span class="name">На&nbsp;чаше</span><span class="leader"></span><span class="price">1400&nbsp;₽</span></li>
+              <li class="item"><span class="name">Два на&nbsp;чаше<small>при заказе сразу двух</small></span><span class="leader"></span><span class="price">2600&nbsp;₽</span></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" tabindex="0">
+            <h3 class="panel-title">Напитки</h3>
+            <ul class="items">
+              <li class="item"><span class="name">Авторский чай<small>апельсин‑облепиха · смородина‑малина · имбирь‑лимон</small></span><span class="leader"></span><span class="price">450&nbsp;₽</span></li>
+              <li class="item"><span class="name">Раф</span><span class="leader"></span><span class="price">310&nbsp;₽</span></li>
+              <li class="item"><span class="name">Лимонад домашний<small>0,7 л</small></span><span class="leader"></span><span class="price">300&nbsp;₽</span></li>
+              <li class="item"><span class="name">Чай в&nbsp;ассортименте<small>чайник 0,7 л</small></span><span class="leader"></span><span class="price">290&nbsp;₽</span></li>
+              <li class="item"><span class="name">Латте или капучино</span><span class="leader"></span><span class="price">250&nbsp;₽</span></li>
+              <li class="item"><span class="name">Эспрессо или американо</span><span class="leader"></span><span class="price">200&nbsp;₽</span></li>
+              <li class="item"><span class="name">Сок в&nbsp;ассортименте<small>1 л</small></span><span class="leader"></span><span class="price">200&nbsp;₽</span></li>
+              <li class="item"><span class="name">Энергетики<small>0,5 л</small></span><span class="leader"></span><span class="price">160&nbsp;₽</span></li>
+            </ul>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-sweet" aria-labelledby="tab-sweet" tabindex="0">
+            <h3 class="panel-title">Сладости</h3>
+            <ul class="items">
+              <li class="item"><span class="name">Бельгийские вафельки</span><span class="leader"></span><span class="price">280&nbsp;₽</span></li>
+              <li class="item"><span class="name">Сладости к&nbsp;чаю</span><span class="leader"></span><span class="price">200&nbsp;₽</span></li>
+              <li class="item"><span class="name">Мороженое</span><span class="leader"></span><span class="price">50&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Фото -->
+  <section class="section" id="photos" aria-labelledby="photos-title" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Screenshots</p>
+        <h2 id="photos-title" data-scramble>Все фото</h2>
+        <p>Неон, приставки, VR и&nbsp;вход с&nbsp;улицы&nbsp;— все снимки из&nbsp;карточки на&nbsp;Яндекс Картах. Нажмите, чтобы открыть крупно.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Фильтр по категориям"></div>
+      <div class="masonry" id="masonry"></div>
+      <div class="gallery-more">
+        <p id="gallery-status" class="pixel" aria-live="polite"></p>
+        <button class="btn btn-ghost" type="button" id="more">Загрузить ещё</button>
+      </div>
+      <p class="gallery-source">Фото: <a href="https://yandex.ru/maps/org/virus_launzh/149144546640/gallery/" target="_blank" rel="noopener">Яндекс Карты</a></p>
+    </div>
+  </section>
+
+  <!-- 7. Отзывы -->
+  <section class="section" id="reviews" aria-labelledby="reviews-title" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Player feedback</p>
+        <h2 id="reviews-title" data-scramble>Отзывы игроков</h2>
+      </div>
+      <div class="review">
+        <div class="score reveal">
+          <p class="score-num">5,0</p>
+          <div class="stars" role="img" aria-label="Рейтинг 5 из 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          <p>396 оценок и&nbsp;262 отзыва на&nbsp;Яндекс Картах</p>
+          <ul class="bars" id="bars" aria-label="Доля положительных отзывов">
+            <li><span>Музыка</span><span>100%</span><i style="--w:100%"></i></li>
+            <li><span>Атмосфера</span><span>98%</span><i style="--w:98%"></i></li>
+            <li><span>Персонал</span><span>97%</span><i style="--w:97%"></i></li>
+            <li><span>Еда</span><span>96%</span><i style="--w:96%"></i></li>
+          </ul>
+        </div>
+        <figure class="award reveal">
+          <div class="trophy">
+            <svg aria-hidden="true"><use href="#i-trophy"/></svg>
+            <div><strong>Хорошее место 2026</strong><span>Награда Яндекс Карт&nbsp;— выбор пользователей</span></div>
+          </div>
+          <blockquote>Впервые в&nbsp;этом городе, но&nbsp;впечатления на&nbsp;полной высоте. Множество разных игр, можно караоке попеть&nbsp;— есть чем занять себя.</blockquote>
+          <figcaption>Валерия, отзыв на&nbsp;Яндекс Картах</figcaption>
+          <a class="btn btn-ghost btn-sm" href="https://yandex.ru/maps/org/virus_launzh/149144546640/reviews/" target="_blank" rel="noopener">Все отзывы<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </figure>
+      </div>
+
+      <div class="chat" aria-label="Отзывы гостей">
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">Т</span><div class="bubble"><blockquote>Диваны мягкие, свет приглушённый, музыка фоном не&nbsp;бесит. Ещё VR и&nbsp;PS5 в&nbsp;подарок&nbsp;— вообще огонь!</blockquote><figcaption><b>Таня</b>декабрь 2025</figcaption></div></figure>
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">В</span><div class="bubble"><blockquote>Пуфы как облака, свет тёплый, музыка релакс. VR поржали до&nbsp;слёз! Идеально для нас двоих.</blockquote><figcaption><b>Валерия З.</b>декабрь 2025</figcaption></div></figure>
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">П</span><div class="bubble"><blockquote>Очень нравятся их сырные шарики и&nbsp;другие закуски! Приходим с&nbsp;друзьями в&nbsp;настолки поиграть или фильм посмотреть.</blockquote><figcaption><b>Павел К.</b>июль 2025</figcaption></div></figure>
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">А</span><div class="bubble"><blockquote>Приятная музыка играет, отдельный плюс за&nbsp;то, что можно поставить свою. Из&nbsp;еды постоянно беру вафли с&nbsp;мороженым.</blockquote><figcaption><b>Алла</b>май 2025</figcaption></div></figure>
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">M</span><div class="bubble"><blockquote>Здесь огромное количество настольных игр, что позволяет прекрасно провести свободное время.</blockquote><figcaption><b>mogilkapressf</b>сентябрь 2025</figcaption></div></figure>
+        <figure class="msg reveal"><span class="ava" aria-hidden="true">С</span><div class="bubble"><blockquote>Хорошо обставленный интерьер, есть PS5, если вы любите игры. Очень вкусный лимонад.</blockquote><figcaption><b>Сергей</b>август 2025</figcaption></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Контакты -->
+  <section class="section" id="contacts" aria-labelledby="contacts-title" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow pixel">Spawn point</p>
+        <h2 id="contacts-title" data-scramble>Точка спавна</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="card reveal">
+          <p class="card-label pixel"><svg aria-hidden="true"><use href="#i-pin"/></svg>Адрес</p>
+          <address style="font-style:normal"><p class="address">Октябрьская ул., 5</p><span class="floor">Цокольный этаж</span></address>
+          <ul class="facts">
+            <li>Остановка «Большая Покровская улица»&nbsp;— 110&nbsp;м</li>
+            <li>Метро «Горьковская»&nbsp;— 1,2&nbsp;км</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <p class="card-label pixel"><svg aria-hidden="true"><use href="#i-clock"/></svg>Часы работы</p>
+          <dl class="hours">
+            <div data-days="0,1,2,3,6"><dt>Пн–чт, вс</dt><dd>16:00–00:00</dd></div>
+            <div data-days="4,5"><dt>Пт–сб</dt><dd>16:00–02:00</dd></div>
+          </dl>
+        </div>
+        <div class="card reveal">
+          <p class="card-label pixel"><svg aria-hidden="true"><use href="#i-phone"/></svg>Бронь</p>
+          <p class="phones"><a href="tel:+79191678754">+7&nbsp;(919)&nbsp;167-87-54</a></p>
+          <div class="socials">
+            <a class="soc" href="https://vk.ru/virus_lounge" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>ВКонтакте</a>
+            <a class="soc" href="https://t.me/virus_launge" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-send"/></svg>Telegram</a>
+          </div>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe src="https://yandex.ru/map-widget/v1/?oid=149144546640&amp;ol=biz&amp;z=17" title="Virus Lounge на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-acid magnet" href="https://yandex.ru/maps/org/virus_launzh/149144546640/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Построить маршрут</a>
+        <a class="btn btn-ghost" href="https://vk.ru/virus_lounge" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Написать в&nbsp;ВК</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="age-wrap"><span class="age" aria-hidden="true">18+</span><p>Только для гостей старше 18&nbsp;лет</p></div>
+    <p>© <span id="year">2026</span> Virus Lounge · Нижний Новгород</p>
+    <p class="credits">Фото и&nbsp;афиши&nbsp;— из&nbsp;карточки заведения на&nbsp;<a href="https://yandex.ru/maps/org/virus_launzh/149144546640/" target="_blank" rel="noopener">Яндекс Картах</a>. <span class="konami-hint">↑↑↓↓←→←→BA</span></p>
+  </div>
+</footer>
+
+<nav class="mobile-bar" aria-label="Быстрые действия">
+  <a class="btn btn-acid" href="tel:+79191678754"><svg aria-hidden="true"><use href="#i-phone"/></svg>Бронь</a>
+  <a class="btn btn-ghost" href="https://yandex.ru/maps/org/virus_launzh/149144546640/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Маршрут</a>
+</nav>
+
+<!-- Лайтбокс -->
+<dialog class="lightbox" id="lightbox" aria-label="Просмотр фото">
+  <div class="lb-top">
+    <p class="lb-count pixel" id="lb-count"></p>
+    <button class="lb-btn" type="button" id="lb-close" aria-label="Закрыть"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-btn lb-prev" type="button" data-step="-1" aria-label="Предыдущее фото"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-next" type="button" data-step="1" aria-label="Следующее фото"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+  </div>
+  <div class="lb-bottom">
+    <p class="lb-cap" id="lb-cap"></p>
+    <div class="lb-nav-m">
+      <button class="lb-btn" type="button" data-step="-1" aria-label="Предыдущее фото"><svg aria-hidden="true" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg></button>
+      <button class="lb-btn" type="button" data-step="1" aria-label="Следующее фото"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Сторис -->
+<dialog class="story" id="story" aria-label="Сторис">
+  <div class="story-frame" id="story-frame">
+    <div class="story-bars" id="story-bars"></div>
+    <div class="story-head"><span id="story-title"></span><button class="story-close" type="button" id="story-close" aria-label="Закрыть сторис"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <img id="story-img" alt="">
+    <button class="story-tap prev" type="button" id="story-prev" aria-label="Назад"></button>
+    <button class="story-tap next" type="button" id="story-next" aria-label="Дальше"></button>
+  </div>
+</dialog>
+
+<script>
+/* ===== Фото с Яндекс Карт: путь get-altay, категория (i интерьер, g игры и гости, f еда, h подачи, o вход, m меню), ориентация ===== */
+var YANDEX = `
+18116908/2a0000019f501eaeac981bc2675957658522 g v
+14021354/2a00000194c75148fc6e8764dc25c76f46f8 i v
+8133749/2a0000018494336711d22a2b153cf55e0533 i v
+10247515/2a00000190f6143d6300a7b364fa78e6ce47 i v
+988435/2a0000019036cd49715e5b1374d2e7b9348e i v
+14093322/2a000001913d36faea000cb346b786d01c11 f v
+4352895/2a0000017badbf5dc220c9aa5208818e3c9c f h
+4437253/2a0000017b4f91e5d37e3b44ec6c5979d5ee f v
+4456415/2a0000017a5397cc34180ef3c19df9caeaac f v
+5235198/2a0000017b4f911839552b495faafda00cd5 f h
+5254019/2a0000017bd53a203438b493ce353ac4788a f v
+5584259/2a0000017e203c27ff5c9c9023a03d1c4947 o h
+2363990/2a0000017bb9d3ab3ae89eaf40fbad0c60e0 o v
+1018548/2a000001860f659654ebae60cc02067b38e2 o h
+11409713/2a0000018e81ed6b4dc9b12b67b57e509d46 i v
+5265775/2a0000017b4f92866858cfc2188c337ee9e1 i v
+10768168/2a000001913d36a41e10ed7b5573771edca5 f v
+14020851/2a00000192ffbfd99e00ecf6d2e9445118e8 o h
+10456159/2a0000018af63ec9c64599a2968ea59802e7 i v
+9831711/2a0000018e938af5bf485950e703e58d9999 g v
+8093564/2a0000018494335fb43b7fcc07fd581c16e8 i v
+14215987/2a00000193f9dad72b5c628cc6652505035e h v
+9830591/2a000001909dc478b038b418773fd89783df i v
+11022524/2a0000018e81edeeb7863c4aa668e3f17c68 i v
+9709783/2a00000189ad7362b681769053126d5fae7e i v
+13457355/2a0000018ebe45a4e747a97e53ebcfb743f0 i v
+13474366/2a000001912f4f442b70913cfa30b8cef60b g v
+11022524/2a0000018e81ee00a117250b71d0ed988724 i v
+13052575/2a0000019301bf4385a992531a08d5fd9458 o v
+15608211/2a000001985b66384259ba1a97c160559a17 m h
+5254019/2a0000017bd53550bee1324bfcdf54c09e85 o v
+19707167/2a0000019d21780024056331412aced4e84e g h
+16920891/2a000001990518af5c3cffff5aeac777c206 h v
+19681410/2a0000019b99316991441ffc60fbd5304c57 g v
+18112381/2a0000019bd615f1f4993b8102d6e1e4471b i v
+16136444/2a0000019ae4672ef592dd2ef797a1ab3eaa i v
+17712904/2a0000019b9932d6bdee5822f9c39274b581 g v
+19534558/2a0000019bd6161bdd11ee15e7c175879573 i v
+15434262/2a0000019711faad7e27e69cffe9767dd646 i v
+16134335/2a000001997176d54dcf0ea658420c423864 g v
+16270073/2a0000019894e74e2b860dc3ae4a42208f0c i v
+13916077/2a00000195b9d5d966015b467755153e7a79 g v
+16410678/2a0000019b9931d1ce5b89b00d6825eaadd9 i v
+15416268/2a00000198aa8ee430f27e0abe37c0663e29 m h
+17750410/2a0000019d5f54b34e57a413a0b6720fc884 g v
+15366886/2a00000195b89dbfac75e108b917acbb7514 g v
+14919466/2a00000195f641694fcb69f3fc519fdb5307 i v
+14907426/2a0000019876610bdbfd722491272a2adac9 g v
+16270073/2a000001985b663879889722fa8ca9fd70a1 m h
+14296532/2a0000019bd6160153b3ca5407d8c3c0df27 i v
+15358610/2a00000195f6532a292af519f3b762668d4c i v
+16319048/2a000001981df3fd93cd24ebca0126ae950c i v
+5254019/2a0000017bd534068933446c4c1f4206b5ef o v
+16542720/2a00000195f6531834777387689ff2b8487d h v
+4581272/2a0000017bd532a7ec67e9355fed081fbf16 o v
+15416268/2a0000019ae469cd04d113d42632a6b398c2 i v
+19546938/2a0000019b9932d56b556d32ab744219b1ba i v
+15032884/2a00000197938ff9e2c63d4b7d0eb1148df3 g v
+15074774/2a000001965498f956cc6a6cdc845b7e66d9 i v
+16457969/2a0000019b9929b739d6c3c4d3e9c0f94490 i v
+15074997/2a000001962affff2f9241afcfeb2359215f i v
+4437253/2a0000017bd532496de818796e397c063a89 o v
+16874376/2a0000019ae4681a3cee6e6f4c7716d19880 i v
+16137047/2a000001980a76e1198a131763126b74d4c2 f v
+16368192/2a000001987f4109be323a694179367ba280 i v
+15292747/2a0000019601aa64344a460d53f1365c1a6c i v
+15066961/2a000001987f41016fb05296147ce1871a96 g v
+16420800/2a0000019b9932e1bd3f7de852382248412e i v
+14076755/2a000001965499254c6d6ee0f67fd09bfd39 i v
+14814101/2a00000195e7b2b9d97d8d3ae3b7f83b2e76 g v
+15343885/2a00000197a54129bd1364f4eb7f402678fd o h
+19580059/2a0000019b99316e9dc4f200c6dca04241d7 o v
+14506105/2a0000019711e8c4f7a0e29d21c82b310c36 f v
+18109934/2a0000019b992ce227306c4b721d6b0a8c7f o v
+16749408/2a00000198aa828aaaac14fff4461e0f0498 o h
+16789805/2a000001983ce680de13b3ef325b6775aeeb i v
+18134977/2a0000019cc41afab5d684ffb409d1358a7a o h
+14816713/2a00000195e87bf1827d1514214d97076033 h v
+15283141/2a00000195e7af422c5fa17611b9640c9513 i v
+5245944/2a0000017bd532fa50c2849eecb12a40911e o v
+16113897/2a00000198aa74fd4b5f349b2161eebbd26e o h
+14919466/2a00000195b89de46eb25ddac87b8923816c f h
+16485345/2a00000198aa7e467dc7e797bc9c7a9ec1d3 o h
+16230048/2a00000196b0d6dbcc39bdbe641587aee554 h v
+5245944/2a0000017bb18e11d0d1931c6df8e8233111 i v
+15452616/2a0000019a45e3510395932487a148dc3b48 i v
+15712112/2a000001987f4103f5ef7810400388aa2746 i v
+16287657/2a00000197a53cc2f7e2ba2d5f0d4e1a5b2e o h
+14919466/2a000001976a4cec0c50646c2b0edd7685b0 i v
+14837019/2a00000196fdb8d2b51376ae037cbd9939a2 o v
+15381861/2a00000198aaa5abbede816fa1bd6c5d540b o h
+15053227/2a00000195ed10eb0429bf2dd3d129f8e9c7 i v
+16569030/2a000001987ac52b40bb2bcfa9ef71fffd6d i v
+15993332/2a00000196fcc1db019630921d67016bffa4 o v
+5316761/2a0000017bb9d26cd955635de739a548d9d7 o v
+16105135/2a000001983fbe1b929924b0b05684f4adab o v
+17754824/2a0000019b992ce4f175581afa57c9fea74e o v
+13944697/2a00000196fc9142b54cb7a492187b9755d9 o h
+14823903/2a00000198aa78212cb7e56d62c3da657754 o h
+16454077/2a00000197a53e3dddffe9b0e6e66ba04576 o h
+16487830/2a00000197f0496784f9adb262cc79cabb38 i v
+5236021/2a0000017bd533464e7394ff701aa4c1c27f o v
+19636095/2a0000019b992ce1f87412097f30fbf75ac6 o v
+21954750/2a000001a14082399b61cc1a645224c0322f i v
+20179276/2a000001a107b3347497d7608a98e35abed2 o h
+20290469/2a000001a107b2f256ec29e7587bd63cb0b4 o h
+20907957/2a000001a107b70002219e79490271f09f78 o h
+20192526/2a000001a0265b66908391ed35a682c3ed3e o h
+20456665/2a000001a00157a85ea1810ef30ff8c59263 h v
+20263355/2a000001a193ef83fc03d798ba3e934f5e81 i v
+19802846/2a000001a16f21fce0008753f92e238316be i v
+21324406/2a000001a1679817fe7fb5430a4745f3faa0 i v
+20784471/2a000001a16798186df1c56aa55ab7a008da i v
+14392184/2a00000195b091f38654c5e062d09e512d88 o h
+`;
+
+/* ===== Сторис заведения (Яндекс Карты): название, обложка, экраны ===== */
+var S = 'https://avatars.mds.yandex.net/get-maps_stories/';
+var STORIES = [
+  ['GTA 6', '21659034/2a000001a1cfacd2922026c7bcf00de33129', ['21659034/2a000001a1cfacd2922026c7bcf00de33129']],
+  ['Акция пн', '20932770/2a000001a11b06a0fdad3cfd78421c25c813', ['20932770/2a000001a11b06a0fdad3cfd78421c25c813']],
+  ['FIFA 27', '21930536/2a000001a085fbfb468226ab985b5f4108c1', ['21930536/2a000001a085fbfb468226ab985b5f4108c1']],
+  ['Квизы', '21930536/2a000001a085fa67fc4244349ac1e7fb72d3', ['21930536/2a000001a085fa67fc4244349ac1e7fb72d3']],
+  ['Бесплатно', '19747176/2a0000019eab2e4fc5048e4f7a6d4342b2cd', ['13970330/2a00000195c885fb380a4f3dfcc65837d79f', '13970330/2a00000195c887506eccf7dcc01ba900eff5', '15561317/2a00000198991e5d1cdac78fc6443fe6b267', '17740151/2a0000019b9938c1d5b3e2eacd332f6df81d', '19747176/2a0000019eab2e4fc5048e4f7a6d4342b2cd']],
+  ['День рождения', '21930536/2a000001a086030c8b5525c8435a231c7f41', ['21930536/2a000001a086030c8b5525c8435a231c7f41']],
+  ['UFC 6', '16302734/2a0000019ef4469a9f9606f9ae7a448d19f1', ['16302734/2a0000019ef4469a9f9606f9ae7a448d19f1']],
+  ['Меню', '18778365/2a0000019eab28b065544ad7dfb612bdbad9', ['20758632/2a0000019ea0f77a9d771c46969dbe847354', '16302734/2a0000019ea0f7b42dcc6689a38e6faf2f5a', '16302734/2a0000019ea1063edc479196cc7848ac6940', '19747176/2a0000019ea10660f67ff4f3377a8a74bf40', '18778365/2a0000019eab28b065544ad7dfb612bdbad9']],
+  ['О нас', '19862234/2a0000019eab284ae015db4e22191f0fe6e5', ['19862234/2a0000019ea0f9c5b18d3da5693e6b127ad2', '20168998/2a0000019ea0fd5817a7a61b94c466535a98', '19862234/2a0000019eab284ae015db4e22191f0fe6e5']],
+  ['Хорошее место', '17707377/2a0000019c658490eef31cb48eeaccdc334a', ['17707377/2a0000019c658490eef31cb48eeaccdc334a']]
+];
+
+var HERO = [
+  '16457969/2a0000019b9929b739d6c3c4d3e9c0f94490',
+  '19546938/2a0000019b9932d56b556d32ab744219b1ba',
+  '11022524/2a0000018e81ee00a117250b71d0ed988724',
+  '15032884/2a00000197938ff9e2c63d4b7d0eb1148df3',
+  '9830591/2a000001909dc478b038b418773fd89783df'
+];
+
+var REEL = [
+  ['8133749/2a0000018494336711d22a2b153cf55e0533', '10247515/2a00000190f6143d6300a7b364fa78e6ce47', '9831711/2a0000018e938af5bf485950e703e58d9999', '13457355/2a0000018ebe45a4e747a97e53ebcfb743f0', '16136444/2a0000019ae4672ef592dd2ef797a1ab3eaa', '19534558/2a0000019bd6161bdd11ee15e7c175879573', '16410678/2a0000019b9931d1ce5b89b00d6825eaadd9', '14919466/2a00000195f641694fcb69f3fc519fdb5307', '16874376/2a0000019ae4681a3cee6e6f4c7716d19880'],
+  ['14093322/2a000001913d36faea000cb346b786d01c11', '15358610/2a00000195f6532a292af519f3b762668d4c', '5254019/2a0000017bd53a203438b493ce353ac4788a', '13474366/2a000001912f4f442b70913cfa30b8cef60b', '17712904/2a0000019b9932d6bdee5822f9c39274b581', '15366886/2a00000195b89dbfac75e108b917acbb7514', '15416268/2a0000019ae469cd04d113d42632a6b398c2', '16420800/2a0000019b9932e1bd3f7de852382248412e', '14814101/2a00000195e7b2b9d97d8d3ae3b7f83b2e76']
+];
+
+(function () {
+  var Y = 'https://avatars.mds.yandex.net/get-altay/';
+  var CATS = { i: 'Интерьер', g: 'Игры и гости', f: 'Еда', h: 'Подачи', o: 'Вход и улица', m: 'Меню' };
+  var ORDER = ['all', 'i', 'g', 'f', 'h', 'o', 'm'];
+  var DIM = { h: [1280, 853], v: [853, 1280] };
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  var PHOTOS = YANDEX.trim().split('\n').map(function (line) {
+    var p = line.trim().split(/\s+/);
+    return { id: p[0], cat: p[1], o: p[2] };
+  });
+  /* «Все» — вперемешку; вход с улицы реже, меню — в конце */
+  var MIX = ['i', 'g', 'i', 'f', 'h', 'i', 'o'];
+  var buckets = {};
+  PHOTOS.forEach(function (p) { (buckets[p.cat] = buckets[p.cat] || []).push(p); });
+  var menuShots = buckets.m || [];
+  var mixed = [];
+  while (mixed.length < PHOTOS.length - menuShots.length) {
+    MIX.forEach(function (c) { if (buckets[c] && buckets[c].length) mixed.push(buckets[c].shift()); });
+  }
+  PHOTOS = mixed.concat(menuShots);
+
+  function thumb(p) { return Y + p.id + '/L'; }
+  function full(p) { return Y + p.id + '/XXXL'; }
+  function byId(id) {
+    for (var k = 0; k < PHOTOS.length; k++) if (PHOTOS[k].id === id) return PHOTOS[k];
+    return { id: id, cat: 'i', o: 'v' };
+  }
+  var statPhotos = document.getElementById('stat-photos');
+  statPhotos.dataset.count = PHOTOS.length; statPhotos.textContent = PHOTOS.length;
+
+  /* ---------- Экран загрузки (один раз за сессию) ---------- */
+  var boot = document.getElementById('boot');
+  var seen = false;
+  try { seen = sessionStorage.getItem('virus-boot') === '1'; } catch (e) {}
+  function endBoot() {
+    if (boot.classList.contains('is-done')) return;
+    boot.classList.add('is-done');
+    document.body.classList.remove('is-booting');
+    try { sessionStorage.setItem('virus-boot', '1'); } catch (e) {}
+    setTimeout(function () { boot.remove(); }, 700);
+  }
+  if (reduce || seen) { boot.remove(); document.body.classList.remove('is-booting'); }
+  else {
+    var lines = ['> подключение к virus_lounge…', '> загрузка неона… ok', '> ps5 + vr … online', '> заражение хорошим вечером…'];
+    var log = document.getElementById('boot-log'), bar = document.getElementById('boot-bar'), pct = document.getElementById('boot-pct');
+    var t0 = performance.now(), DUR = 1700;
+    (function tick(now) {
+      var k = Math.min(1, (now - t0) / DUR);
+      var v = Math.round(k * 100);
+      bar.style.width = v + '%'; pct.textContent = v + '%';
+      var n = Math.min(lines.length, Math.floor(k * lines.length) + 1);
+      if (log.children.length < n) { var p = document.createElement('p'); p.textContent = lines[log.children.length]; log.appendChild(p); }
+      if (k < 1) requestAnimationFrame(tick); else setTimeout(endBoot, 250);
+    })(t0);
+    boot.addEventListener('click', endBoot);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' || e.key === 'Enter') endBoot(); }, { once: true });
+  }
+
+  /* ---------- Фон: вирусные частицы ---------- */
+  var cv = document.getElementById('germs'), ctx = cv.getContext('2d');
+  var germs = [], W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, innerWidth < 900 ? 1 : 1.5);
+  var mouse = { x: -999, y: -999 };
+  var COLORS = ['166,255,0', '61,255,139', '139,92,255', '255,46,154'];
+  function makeGerm(x, y, burst) {
+    var r = burst ? 4 + Math.random() * 8 : 6 + Math.random() * 18;
+    var a = Math.random() * Math.PI * 2, sp = burst ? 2 + Math.random() * 5 : .15 + Math.random() * .35;
+    return { x: x, y: y, r: r, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, rot: Math.random() * 6, vr: (Math.random() - .5) * .01, c: COLORS[Math.floor(Math.random() * COLORS.length)], al: burst ? .8 : .12 + Math.random() * .22, life: burst ? 90 : -1, spikes: 7 + Math.floor(Math.random() * 4) };
+  }
+  function resize() {
+    W = innerWidth; H = innerHeight;
+    cv.width = W * DPR; cv.height = H * DPR; ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    var want = Math.round(Math.min(46, W / 28));
+    germs = germs.filter(function (g) { return g.life > 0; });
+    for (var i = 0; i < want; i++) germs.push(makeGerm(Math.random() * W, Math.random() * H));
+  }
+  function drawGerm(g) {
+    ctx.save(); ctx.translate(g.x, g.y); ctx.rotate(g.rot);
+    var a = g.life > 0 ? g.al * g.life / 90 : g.al;
+    ctx.strokeStyle = 'rgba(' + g.c + ',' + a + ')'; ctx.fillStyle = 'rgba(' + g.c + ',' + a * .25 + ')'; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(0, 0, g.r, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    for (var s = 0; s < g.spikes; s++) {
+      var an = s / g.spikes * Math.PI * 2, cx = Math.cos(an), sy = Math.sin(an);
+      ctx.beginPath(); ctx.moveTo(cx * g.r, sy * g.r); ctx.lineTo(cx * g.r * 1.55, sy * g.r * 1.55); ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx * g.r * 1.65, sy * g.r * 1.65, g.r * .14, 0, Math.PI * 2); ctx.fillStyle = 'rgba(' + g.c + ',' + a + ')'; ctx.fill();
+    }
+    ctx.restore();
+  }
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    for (var i = germs.length - 1; i >= 0; i--) {
+      var g = germs[i];
+      var dx = g.x - mouse.x, dy = g.y - mouse.y, d2 = dx * dx + dy * dy;
+      if (d2 < 14000 && g.life < 0) { var f = 1.4 / Math.sqrt(d2 + 1); g.vx += dx * f * .05; g.vy += dy * f * .05; }
+      g.x += g.vx; g.y += g.vy; g.rot += g.vr;
+      if (g.life < 0) {
+        g.vx *= .99; g.vy *= .99;
+        if (Math.abs(g.vx) < .12) g.vx += (Math.random() - .5) * .05;
+        if (Math.abs(g.vy) < .12) g.vy += (Math.random() - .5) * .05;
+        if (g.x < -40) g.x = W + 40; if (g.x > W + 40) g.x = -40; if (g.y < -40) g.y = H + 40; if (g.y > H + 40) g.y = -40;
+      } else if (--g.life <= 0) { germs.splice(i, 1); continue; }
+      drawGerm(g);
+    }
+    if (!reduce && !document.hidden) requestAnimationFrame(frame);
+  }
+  resize(); frame();
+  addEventListener('resize', resize);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && !reduce) requestAnimationFrame(frame); });
+  addEventListener('pointermove', function (e) { mouse.x = e.clientX; mouse.y = e.clientY; }, { passive: true });
+  function burst(x, y, n) { if (reduce) return; for (var i = 0; i < n; i++) germs.push(makeGerm(x, y, true)); }
+
+  /* ---------- Курсор и магнитные кнопки ---------- */
+  if (fine && !reduce) {
+    var cur = document.getElementById('cursor'), cx = 0, cy = 0, tx = 0, ty = 0;
+    addEventListener('pointermove', function (e) { tx = e.clientX; ty = e.clientY; cur.classList.add('is-on'); }, { passive: true });
+    document.addEventListener('pointerover', function (e) { cur.classList.toggle('is-hover', !!e.target.closest('a, button')); });
+    (function loop() { cx += (tx - cx) * .2; cy += (ty - cy) * .2; cur.style.transform = 'translate(' + cx + 'px,' + cy + 'px)'; requestAnimationFrame(loop); })();
+    document.addEventListener('pointerdown', function (e) { burst(e.clientX, e.clientY, 8); });
+    Array.prototype.forEach.call(document.querySelectorAll('.magnet'), function (b) {
+      b.addEventListener('pointermove', function (e) { var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + (e.clientX - r.left - r.width / 2) * .18 + 'px,' + (e.clientY - r.top - r.height / 2) * .3 + 'px)'; });
+      b.addEventListener('pointerleave', function () { b.style.transform = ''; });
+    });
+  }
+
+  /* ---------- Наклон карточек ---------- */
+  if (fine && !reduce) {
+    Array.prototype.forEach.call(document.querySelectorAll('.tilt'), function (el) {
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        el.classList.add('is-tilting');
+        el.style.setProperty('--ry', (px - .5) * 10 + 'deg'); el.style.setProperty('--rx', (.5 - py) * 8 + 'deg');
+        el.style.setProperty('--gx', px * 100 + '%'); el.style.setProperty('--gy', py * 100 + '%');
+      });
+      el.addEventListener('pointerleave', function () { el.classList.remove('is-tilting'); el.style.setProperty('--rx', '0deg'); el.style.setProperty('--ry', '0deg'); });
+    });
+  }
+
+  /* ---------- Полоса опыта ---------- */
+  var xp = document.getElementById('xp'), ticking = false;
+  addEventListener('scroll', function () {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () {
+      var max = document.documentElement.scrollHeight - innerHeight;
+      xp.style.transform = 'scaleX(' + (max > 0 ? scrollY / max : 0) + ')'; ticking = false;
+    });
+  }, { passive: true });
+
+  /* ---------- Достижения ---------- */
+  var toasts = document.getElementById('toasts');
+  function toast(title, sub) {
+    var t = document.createElement('div');
+    t.className = 'toast';
+    t.innerHTML = '<span class="t-ico" aria-hidden="true"><svg><use href="#i-trophy"/></svg></span><div><p class="pixel">' + sub + '</p><strong>' + title + '</strong></div>';
+    toasts.appendChild(t);
+    setTimeout(function () { t.remove(); }, 4000);
+  }
+  var ACH = { modes: 'Открыт выбор режима', events: 'Найдены бонусы', menu: 'Магазин разблокирован', photos: 'Фотограф: ' + PHOTOS.length + ' фото', contacts: 'Точка спавна найдена' };
+  var got = {};
+
+  /* ---------- Лайтбокс ---------- */
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img');
+  var lbCount = document.getElementById('lb-count'), lbCap = document.getElementById('lb-cap');
+  var lbList = [], lbIndex = 0, lastFocus = null;
+  function show(i) {
+    lbIndex = (i + lbList.length) % lbList.length;
+    var p = lbList[lbIndex];
+    lbImg.classList.add('is-loading');
+    lbImg.onload = function () { lbImg.classList.remove('is-loading'); };
+    lbImg.src = full(p); lbImg.alt = CATS[p.cat] || 'Фото';
+    lbCount.textContent = (lbIndex + 1) + ' / ' + lbList.length;
+    lbCap.innerHTML = '<b>' + (CATS[p.cat] || '') + '</b> · Яндекс Карты';
+    [1, -1].forEach(function (d) { (new Image()).src = full(lbList[(lbIndex + d + lbList.length) % lbList.length]); });
+  }
+  function openModal(d) { lastFocus = document.activeElement; if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', ''); document.body.style.overflow = 'hidden'; }
+  function closeModal(d) { if (d.open && typeof d.close === 'function') d.close(); else d.removeAttribute('open'); }
+  function openLb(list, i) { if (!list.length) return; lbList = list; openModal(lb); show(i || 0); }
+  lb.addEventListener('close', function () { document.body.style.overflow = ''; lbImg.removeAttribute('src'); if (lastFocus) lastFocus.focus(); });
+  document.getElementById('lb-close').addEventListener('click', function () { closeModal(lb); });
+  Array.prototype.forEach.call(lb.querySelectorAll('[data-step]'), function (b) { b.addEventListener('click', function () { show(lbIndex + Number(b.dataset.step)); }); });
+  lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') show(lbIndex + 1); if (e.key === 'ArrowLeft') show(lbIndex - 1); });
+  document.getElementById('lb-stage').addEventListener('click', function (e) { if (e.target === this) closeModal(lb); });
+  var sx = null;
+  lbImg.addEventListener('pointerdown', function (e) { sx = e.clientX; });
+  lbImg.addEventListener('pointerup', function (e) { if (sx === null) return; var dx = e.clientX - sx; sx = null; if (Math.abs(dx) > 40) show(lbIndex + (dx < 0 ? 1 : -1)); });
+
+  /* ---------- Сторис ---------- */
+  var st = document.getElementById('story'), stFrame = document.getElementById('story-frame'), stImg = document.getElementById('story-img');
+  var stBars = document.getElementById('story-bars'), stTitle = document.getElementById('story-title');
+  var sI = 0, sJ = 0, sTimer = null, SDUR = 5000;
+  var storyBtns = [];
+  function stShow() {
+    clearTimeout(sTimer);
+    var s = STORIES[sI];
+    stTitle.textContent = s[0];
+    stImg.src = S + s[2][sJ] + '/1080x1920'; stImg.alt = 'Сторис: ' + s[0];
+    stBars.innerHTML = '';
+    s[2].forEach(function (_, k) { var i = document.createElement('i'); i.className = k < sJ ? 'is-done' : (k === sJ ? 'is-now' : ''); i.innerHTML = '<b></b>'; stBars.appendChild(i); });
+    stFrame.style.setProperty('--dur', SDUR + 'ms');
+    if (storyBtns[sI]) storyBtns[sI].classList.add('is-seen');
+    if (!reduce) sTimer = setTimeout(stNext, SDUR);
+  }
+  function stNext() { if (sJ < STORIES[sI][2].length - 1) sJ++; else if (sI < STORIES.length - 1) { sI++; sJ = 0; } else { closeModal(st); return; } stShow(); }
+  function stPrev() { if (sJ > 0) sJ--; else if (sI > 0) { sI--; sJ = 0; } stShow(); }
+  function openStory(i) { sI = i; sJ = 0; openModal(st); stShow(); }
+  st.addEventListener('close', function () { clearTimeout(sTimer); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); });
+  document.getElementById('story-close').addEventListener('click', function () { closeModal(st); });
+  document.getElementById('story-next').addEventListener('click', stNext);
+  document.getElementById('story-prev').addEventListener('click', stPrev);
+  st.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') stNext(); if (e.key === 'ArrowLeft') stPrev(); });
+  var storiesEl = document.getElementById('stories');
+  STORIES.forEach(function (s, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'story-btn';
+    b.innerHTML = '<span class="ring"><span><img src="' + S + s[1] + '/M" alt="" loading="lazy"></span></span><small>' + s[0] + '</small>';
+    b.addEventListener('click', function () { openStory(i); });
+    storiesEl.appendChild(b); storyBtns.push(b);
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-story]'), function (b) { b.addEventListener('click', function () { openStory(Number(b.dataset.story)); }); });
+
+  /* ---------- Слайдшоу в герое ---------- */
+  var media = document.getElementById('hero-media'), dots = document.getElementById('hero-dots');
+  var slides = HERO.map(function (id, n) {
+    var img = document.createElement('img');
+    img.className = 'hero-slide' + (n === 0 ? ' is-on' : ''); img.alt = ''; img.sizes = '100vw';
+    img.srcset = Y + id + '/XXL 1024w, ' + Y + id + '/XXXL 1280w, ' + Y + id + '/orig 2400w';
+    img.src = Y + id + '/XXXL';
+    if (n > 0) img.loading = 'lazy'; else img.fetchPriority = 'high';
+    media.appendChild(img);
+    var b = document.createElement('button');
+    b.type = 'button'; b.setAttribute('aria-label', 'Фото ' + (n + 1));
+    b.addEventListener('click', function () { go(n); restart(); });
+    dots.appendChild(b);
+    return img;
+  });
+  var curSlide = 0, timer = null;
+  function go(n) {
+    slides[curSlide].classList.remove('is-on');
+    curSlide = (n + slides.length) % slides.length;
+    slides[curSlide].loading = 'eager'; slides[curSlide].classList.add('is-on');
+    if (!reduce) { media.classList.remove('is-glitch'); void media.offsetWidth; media.classList.add('is-glitch'); }
+    Array.prototype.forEach.call(dots.children, function (d, k) { d.setAttribute('aria-current', k === curSlide); });
+  }
+  function restart() { clearInterval(timer); if (!reduce) timer = setInterval(function () { go(curSlide + 1); }, 5500); }
+  go(0); restart();
+
+  /* ---------- Фотолента ---------- */
+  var reel = document.getElementById('reel');
+  REEL.forEach(function (row, r) {
+    var list = row.map(byId), el = document.createElement('div');
+    el.className = 'reel-row' + (r ? ' rev' : '');
+    list.concat(list).forEach(function (p, k) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('aria-label', 'Открыть фото: ' + CATS[p.cat]);
+      if (k >= list.length) { b.tabIndex = -1; b.setAttribute('aria-hidden', 'true'); }
+      b.innerHTML = '<img src="' + thumb(p) + '" alt="" loading="lazy">';
+      b.addEventListener('click', function () { openLb(list, k % list.length); });
+      el.appendChild(b);
+    });
+    reel.appendChild(el);
+  });
+
+  /* ---------- Галерея ---------- */
+  var masonry = document.getElementById('masonry'), filtersEl = document.getElementById('filters');
+  var moreBtn = document.getElementById('more'), statusEl = document.getElementById('gallery-status');
+  var STEP = 24, shown = 0, current = 'all', list = PHOTOS;
+  ORDER.forEach(function (key) {
+    var count = key === 'all' ? PHOTOS.length : PHOTOS.filter(function (p) { return p.cat === key; }).length;
+    if (!count) return;
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'filter'; b.dataset.cat = key; b.setAttribute('aria-pressed', key === 'all');
+    b.innerHTML = (key === 'all' ? 'Все' : CATS[key]) + ' <small>' + count + '</small>';
+    b.addEventListener('click', function () { setFilter(key); });
+    filtersEl.appendChild(b);
+  });
+  function render(n) {
+    var frag = document.createDocumentFragment();
+    list.slice(shown, shown + n).forEach(function (p, k) {
+      var idx = shown + k, b = document.createElement('button');
+      b.type = 'button'; b.className = 'shot'; b.setAttribute('aria-label', 'Открыть фото ' + (idx + 1) + ': ' + CATS[p.cat]);
+      var img = document.createElement('img'); img.loading = 'lazy'; img.alt = '';
+      var d = DIM[p.o]; if (d) { img.width = d[0]; img.height = d[1]; }
+      img.onload = function () { b.classList.add('is-loaded'); };
+      img.onerror = function () { b.remove(); };
+      img.src = thumb(p); b.appendChild(img);
+      if (current === 'all') { var t = document.createElement('span'); t.className = 'tag'; t.textContent = CATS[p.cat]; b.appendChild(t); }
+      b.addEventListener('click', function () { openLb(list, idx); });
+      frag.appendChild(b);
+    });
+    masonry.appendChild(frag);
+    shown = Math.min(shown + n, list.length);
+    statusEl.textContent = 'Загружено ' + shown + ' / ' + list.length;
+    moreBtn.hidden = shown >= list.length;
+  }
+  function setFilter(key) {
+    current = key; list = key === 'all' ? PHOTOS : PHOTOS.filter(function (p) { return p.cat === key; });
+    Array.prototype.forEach.call(filtersEl.children, function (b) { b.setAttribute('aria-pressed', b.dataset.cat === key); });
+    masonry.innerHTML = ''; shown = 0; render(STEP);
+  }
+  moreBtn.addEventListener('click', function () { render(STEP); });
+  setFilter('all');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-open-cat]'), function (b) {
+    b.addEventListener('click', function () { openLb(PHOTOS.filter(function (p) { return p.cat === b.dataset.openCat; }), 0); });
+  });
+
+  /* ---------- Табы меню ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab, focus) {
+    tabs.forEach(function (t) { var on = t === tab; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; document.getElementById(t.getAttribute('aria-controls')).hidden = !on; });
+    if (focus) tab.focus();
+    var tl = tab.parentElement; if (tl.scrollWidth > tl.clientWidth) tl.scrollLeft = tab.offsetLeft - 16;
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(t); });
+    t.addEventListener('keydown', function (e) {
+      var n = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+      if (n === undefined) return; e.preventDefault(); select(tabs[(n + tabs.length) % tabs.length], true);
+    });
+  });
+  if (tabs.length) select(tabs[0]);
+
+  /* ---------- Отсчёт до релиза GTA 6 (19 ноября 2026, 00:00 МСК) ---------- */
+  var RELEASE = Date.parse('2026-11-19T00:00:00+03:00');
+  var cd = document.getElementById('countdown');
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function cdTick() {
+    var left = Math.max(0, RELEASE - Date.now());
+    if (!left) {
+      cd.hidden = true;
+      document.getElementById('quest-label').textContent = 'Квест выполнен · релиз состоялся';
+      document.getElementById('quest-text').textContent = 'GTA 6 уже в Вирусе — приходите играть. Плойку лучше забронировать заранее.';
+      return;
+    }
+    var s = Math.floor(left / 1000);
+    cd.querySelector('[data-u="d"]').textContent = pad(Math.floor(s / 86400));
+    cd.querySelector('[data-u="h"]').textContent = pad(Math.floor(s % 86400 / 3600));
+    cd.querySelector('[data-u="m"]').textContent = pad(Math.floor(s % 3600 / 60));
+    cd.querySelector('[data-u="s"]').textContent = pad(s % 60);
+    setTimeout(cdTick, 1000);
+  }
+  cdTick();
+
+  /* ---------- Открыто сейчас — по московскому времени ---------- */
+  try {
+    var parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Moscow', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+    var get = function (type) { return parts.filter(function (p) { return p.type === type; })[0].value; };
+    var day = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 }[get('weekday')];
+    var now = parseInt(get('hour'), 10) * 60 + parseInt(get('minute'), 10);
+    var afterMidnight = function (d) { return d === 4 || d === 5 ? 120 : 0; }; // пт, сб — до 02:00
+    var session = null;
+    if (now >= 960) session = day;
+    else if (now < afterMidnight((day + 6) % 7)) session = (day + 6) % 7;
+    Array.prototype.forEach.call(document.querySelectorAll('.hours [data-days]'), function (row) { if (row.dataset.days.split(',').indexOf(String(day)) !== -1) row.classList.add('is-today'); });
+    var status = document.getElementById('status'), text = document.getElementById('status-text');
+    if (session !== null) { status.dataset.open = 'true'; text.textContent = 'Online · до ' + (afterMidnight(session) ? '02:00' : '00:00'); }
+    else { status.dataset.open = 'false'; text.textContent = 'Offline · старт в 16:00'; }
+    var clock = document.getElementById('hud-clock');
+    (function clk() { clock.textContent = new Intl.DateTimeFormat('ru-RU', { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(new Date()) + ' мск'; setTimeout(clk, 1000); })();
+  } catch (e) {}
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Скремблинг заголовков и счётчики ---------- */
+  var GLYPHS = '█▓▒░#%&@01VIRUS';
+  function scramble(el) {
+    var final = el.textContent, len = final.length, start = performance.now(), D = 700;
+    (function step(now) {
+      var k = Math.min(1, (now - start) / D), out = '';
+      for (var i = 0; i < len; i++) {
+        var ch = final[i];
+        out += (i < k * len || ch === ' ' || ch === ' ') ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+      }
+      el.textContent = out;
+      if (k < 1) requestAnimationFrame(step); else el.textContent = final;
+    })(start);
+  }
+  function countUp(el) {
+    var to = parseFloat(el.dataset.count), dec = Number(el.dataset.dec || 0), suf = el.dataset.suffix || '', start = performance.now(), D = 1300;
+    (function step(now) {
+      var k = Math.min(1, (now - start) / D), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = (to * e).toFixed(dec).replace('.', ',') + suf;
+      if (k < 1) requestAnimationFrame(step);
+    })(start);
+  }
+
+  /* ---------- Навигация, появление, достижения ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  if (!('IntersectionObserver' in window) || reduce) {
+    Array.prototype.forEach.call(document.querySelectorAll('.reveal, .reveal-pop'), function (el) { el.classList.add('is-in'); });
+    document.getElementById('bars').classList.add('is-in');
+  } else {
+    var navIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var id = en.target.id;
+        navLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + id); });
+        if (ACH[id] && !got[id]) { got[id] = 1; toast(ACH[id], 'achievement unlocked'); }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    navLinks.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) navIo.observe(s); });
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        el.classList.add('is-in');
+        if (el.hasAttribute('data-scramble')) scramble(el);
+        if (el.dataset.count) countUp(el);
+        if (el.id === 'bars') el.classList.add('is-in');
+        io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    Array.prototype.forEach.call(document.querySelectorAll('.reveal, .reveal-pop, [data-scramble], [data-count], #bars'), function (el) { io.observe(el); });
+  }
+
+  /* ---------- Пасхалка: Konami-код ---------- */
+  var KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'], kp = 0;
+  document.addEventListener('keydown', function (e) {
+    var key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+    kp = key === KONAMI[kp] ? kp + 1 : (key === KONAMI[0] ? 1 : 0);
+    if (kp === KONAMI.length) {
+      kp = 0;
+      for (var i = 0; i < 6; i++) burst(Math.random() * innerWidth, Math.random() * innerHeight, 14);
+      toast('Чит-код активирован: эпидемия веселья', 'secret unlocked');
+    }
+  });
+})();
+</script>
+</body>
+</html>
